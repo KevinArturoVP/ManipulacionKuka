@@ -1,0 +1,1 @@
+/home/pc-proyecto/Manipulacion/catkin_ws/devel/.private/kinect2_bridge/lib/pkgconfig/kinect2_bridge.pc

@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<robot name="assembly_kuka_simp">
+    <material name="orange">
+        <color rgba="0.933 0.635 0.309 1" />
+    </material>
+    <material name="black">
+        <color rgba="0.121 0.109 0.098 1" />
+    </material>
+    <material name="platinum">
+        <color rgba="0.835 0.815 0.803 1" />
+    </material>
+
+    <link name="world" />
+
+    <link name="base_link">        
+		<inertial>
+            <origin xyz="-0.001558 0.0 0.1124" rpy="0 0 0" />
+            <mass value="48.9475" />
+            <inertia ixx="0.53585" ixy="0.0" ixz="-0.00395" iyy="0.54899" iyz="-0.00001" izz="0.66970" />
+        </inertial>
+
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://kr52_description/meshes/base_link.dae" />
+            </geometry>
+            <material name="black" />
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://assembly_kuka_simp/meshes/base_link.dae" />
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="world_base" type="fixed">
+        <parent link="world" />
+        <child link="base_link" />
+        <origin rpy="0 0 0" xyz="0 0 0" />
+    </joint>
+
+    <link name="link_1">
+		<inertial>
+            <origin xyz="0.067038 -0.01448 0.09133" rpy="0 0 0" />
+            <mass value="28.2722" />
+            <inertia ixx="0.2912" ixy="-0.04226" ixz="0.1367" iyy="0.4828" iyz="-0.03051" izz="0.4624" />
+        </inertial>
+
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://kr52_description/meshes/link_1.dae" />
+            </geometry>
+            <material name="">
+                <color rgba="0.97 0.64 0.04 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://assembly_kuka_simp/meshes/link_1.dae" />
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="base_to_link1" type="continuous">
+        <origin xyz="0 0 0.2255" rpy="0 0 0" />
+        <parent link="base_link" />
+        <child link="link_1" />
+        <axis xyz="0 0 1" />
+		<dynamics damping="0.7"/>
+        <limit lower="-2.7053" upper="2.7053" effort="10.0" velocity="2.6878" />
+    </joint>
+
+
+    <link name="link_2">        
+		<inertial>
+            <origin xyz="0.001942 -0.1737 0.26701" rpy="0 0 0" />
+            <mass value="20.7503" />
+            <inertia ixx="0.70458" ixy="-0.00057" ixz="0.00592" iyy="0.71816" iyz="-0.02276" izz="0.05679" />
+        </inertial>
+
+        <visual>
+            <origin xyz="0 -0.27055 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://assembly_kuka_simp/meshes/link_2_1.dae" />
+            </geometry>
+            <material name="">
+                <color rgba="0.933 0.635 0.309 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 -0.27055 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://assembly_kuka_simp/meshes/link_2.dae" />
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="link1_to_link2" type="continuous">
+        <origin xyz="0.18106 -0.002 0.178" rpy="0 0 0" />
+        <parent link="link_1" />
+        <child link="link_2" />
+        <axis xyz="0 1 0" />
+		<dynamics damping="0.7"/>
+        <limit lower="-3.1416" upper="1.1345" effort="10.0" velocity="2.6878" />
+    </joint>
+
+    <link name="link_3">        
+		<inertial>
+            <origin xyz="0.086086 -0.024557 0.10627" rpy="0 0 0" />
+            <mass value="16.6002" />
+            <inertia ixx="0.18666" ixy="0.04216" ixz="0.08152" iyy="0.23653" iyz="0.04962" izz="0.18575" />
+        </inertial>
+
+        <visual>
+            <origin xyz="0 -0.13635 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://kr52_description/meshes/link_3.dae" />
+            </geometry>
+            <material name="">
+                <color rgba="0.933 0.635 0.309 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 -0.13635 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://assembly_kuka_simp/meshes/link_3.dae" />
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="link2_to_link3" type="continuous">
+        <origin xyz="0.0011745 0.002 0.59705" rpy="0 0 0" />
+        <parent link="link_2" />
+        <child link="link_3" />
+        <axis xyz="0 1 0" />
+		<dynamics damping="0.7"/>
+        <limit lower="-0.2618" upper="2.7576" effort="10.0" velocity="3.9794" />
+    </joint>
+
+    <link name="link_4">
+        <inertial>
+            <origin xyz="0.19879 -0.00067831 0.0004912" rpy="0 0 0" />
+            <mass value="8.6632" />
+            <inertia ixx="0.08299" ixy="-0.00040" ixz="-0.00075" iyy="0.13232" iyz="-0.01710" izz="0.18882" />
+        </inertial>
+
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://assembly_kuka_simp/meshes/link_4_1.dae" />
+            </geometry>
+            <material name="">
+                <color rgba="0.933 0.635 0.309 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://assembly_kuka_simp/meshes/link_4.dae" />
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="link3_to_link4" type="continuous">
+        <origin xyz="0.237 0 0.17" rpy="0 0 0" />
+        <parent link="link_3" />
+        <child link="link_4" />
+        <axis xyz="1 0 0" />
+		<dynamics damping="0.7"/>
+        <limit lower="-6.1087" upper="-6.1087" effort="10.0" velocity="5.969" />
+    </joint>
+
+    <link name="link_5">
+        <inertial>
+            <origin xyz="0.075375 -0.0070921 0" rpy="0 0 0" />
+            <mass value="2.7234" />
+            <inertia ixx="0.00698" ixy="-0.00082" ixz="0.0" iyy="0.01633" iyz="0.0" izz="0.02073" />
+        </inertial>
+
+        <visual>
+            <origin xyz="0 0 -0.082318" rpy="1.5708 0 0" />
+            <geometry>
+                <mesh filename="package://assembly_kuka_simp/meshes/link_5.dae" />
+            </geometry>
+            <material name="">
+                <color rgba="0.933 0.635 0.309 1" />
+            </material>
+        </visual>
+
+        <collision>
+            <origin xyz="0 0 -0.082318" rpy="1.5708 0 0" />
+            <geometry>
+                <mesh filename="package://assembly_kuka_simp/meshes/link_5.dae" />
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="link4_to_link5" type="continuous">
+        <origin xyz="0.383 0.005 0" rpy="0 0 0" />
+        <parent link="link_4" />
+        <child link="link_5" />
+        <axis xyz="0 0 1" />
+		<dynamics damping="0.7"/>
+        <limit lower="-2.2689" upper="2.2689" effort="10.0" velocity="6.7021" />
+    </joint>
+
+    <link name="link_6">
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <mass value="0.05109" />
+            <inertia ixx="0.0000431" ixy="0.0" ixz="0.0" iyy="0.0000224" iyz="0.0" izz="0.0000227" />
+        </inertial>
+
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://assembly_kuka_simp/meshes/link_6.dae" />
+            </geometry>
+            <material name="platinum" />
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://assembly_kuka_simp/meshes/link_6.dae" />
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="link5_to_link6" type="continuous">
+        <origin xyz="0.193 -0.003 0" rpy="1.3396 0 0" />
+        <parent link="link_5" />
+        <child link="link_6" />
+        <axis xyz="1 0 0" />
+		<dynamics damping="0.7"/>
+        <limit lower="-6.1087" upper="6.1087" effort="10.0" velocity="12.584" />
+    </joint>
+
+
+    <!-- ******************** GRIPPER *********************-->
+    <link name="base_link_grp">
+        <inertial>
+            <origin xyz="-0.12444 0.015119 0.11802" rpy="0 0 0" />
+            <mass value="0.13435" />
+            <inertia ixx="0.0000834" ixy="0.0" ixz="0.0" iyy="0.0001620" iyz="0.0" izz="0.0000794" />
+        </inertial>
+
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://gripper_schunk_kuka/meshes/base_link_grp.STL" />
+            </geometry>
+            <material name="">
+                <color rgba="0.79 0.9 0.48 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://gripper_schunk_kuka/meshes/base_link_grp.STL" />
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="link6_to_bgrp" type="fixed">
+        <origin xyz="0.005 0 0" rpy="0 0 0" />
+        <parent link="link_6" />
+        <child link="base_link_grp" />
+        <axis xyz="1 0 0" />
+	<dynamics damping="0.7"/>
+        <limit lower="-6.1087" upper="6.1087" effort="0" velocity="12.584" />
+    </joint>
+
+    <link name="structure_grp">
+        <inertial>
+            <origin xyz="-0.00021291 0.023532 3.5559E-05" rpy="0 0 0" />
+            <mass value="1.0789" />
+            <inertia ixx="0.0009873" ixy="-0.0" ixz="0.0" iyy="0.0015558" iyz="0.0" izz="0.0009789" />
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://gripper_schunk_kuka/meshes/structure_grp.STL" />
+            </geometry>
+            <material name="">
+                <color rgba="0.79 0.9 0.48 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://gripper_schunk_kuka/meshes/structure_grp.STL" />
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="base_to_str_grp" type="fixed">
+        <origin xyz="0.0063 0 0" rpy="0 0 0" />
+        <parent link="base_link_grp" />
+        <child link="structure_grp" />
+        <axis xyz="1 0 0" />
+		<dynamics damping="0.7"/>
+    </joint>
+
+    <link name="guide_1_grp">
+        <inertial>
+            <origin xyz="0 0.009 0.027502" rpy="0 0 0" />
+            <mass value="0.06552" />
+            <inertia ixx="0.0000180" ixy="0.0" ixz="0.0" iyy="0.0000185" iyz="0.0" izz="0.0000046" />
+        </inertial>
+
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://gripper_schunk_kuka/meshes/guide_1_grp.STL" />
+            </geometry>
+            <material name="">
+                <color rgba="0 0 0 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://gripper_schunk_kuka/meshes/guide_1_grp.STL" />
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="str_to_g1_grp" type="prismatic">
+        <origin xyz="0.0321 0 -0.0043" rpy="3.1416 0 0" />
+        <parent link="structure_grp" />
+        <child link="guide_1_grp" />
+        <axis xyz="0 0 1" />
+		<dynamics damping="0.7"/>
+        <limit lower="0" upper="0.005" effort="0" velocity="0.05" />
+    </joint>
+
+    <link name="guide_2_grp">
+        <inertial>
+            <origin xyz="0 0.00945024176112787 0.0275015665025582" rpy="0 0 0" />
+            <mass value="0.06552" />
+            <inertia ixx="0.0000180" ixy="0.0" ixz="0.0" iyy="0.0000185" iyz="0.0" izz="0.0000046" />
+        </inertial>
+
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://gripper_schunk_kuka/meshes/guide_1_grp.STL" />
+            </geometry>
+            <material name="">
+                <color rgba="0 0 0 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://gripper_schunk_kuka/meshes/guide_1_grp.STL" />
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="str_to_g2_grp" type="prismatic">
+        #-0.0037239 0.0321 0.00215
+        <origin xyz="0.0321 -3.724E-3 2.15E-3" rpy="1.0472 0 0" />
+        <parent link="structure_grp" />
+        <child link="guide_2_grp" />
+        <axis xyz="0 0 1" />
+		<dynamics damping="0.7"/>
+        <limit lower="0" upper="0.005" effort="0" velocity="0.05" />
+    </joint>
+
+    <link name="guide_3_grp">
+        <inertial>
+            <origin xyz="0.0087239 0.0094502 0.025291" rpy="0 0 0" />
+            <mass value="0.06552" />
+            <inertia ixx="0.0000180" ixy="0.0" ixz="0.0" iyy="0.0000185" iyz="0.0" izz="0.0000046" />
+        </inertial>
+
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://gripper_schunk_kuka/meshes/guide_1_grp.STL" />
+            </geometry>
+            <material name="">
+                <color rgba="0 0 0 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://gripper_schunk_kuka/meshes/guide_1_grp.STL" />
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="str_to_g3_grp" type="prismatic">
+        #-0.0037239 0.0321 0.00215
+        <origin xyz="0.0321 3.724E-3 2.15E-3" rpy="5.236 0 0" />
+        <parent link="structure_grp" />
+        <child link="guide_3_grp" />
+        <axis xyz="0 0 1" />
+		<dynamics damping="0.7"/>
+        <limit lower="0" upper="0.005" effort="0" velocity="0.05" />
+    </joint>
+
+    <link name="finger1_grp">
+        <inertial>
+            <origin xyz="0.0099787 0.037092 0.006" rpy="0 0 0" />
+            <mass value="0.091368" />
+            <inertia ixx="0.0000410" ixy="-0.0000150" ixz="0.0" iyy="0.000018" iyz="0.0" izz="0.0000576" />
+        </inertial>
+
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://gripper_schunk_kuka/meshes/finger1_grp.STL" />
+            </geometry>
+            <material name="">
+                <color rgba="0.75294 1 1 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://gripper_schunk_kuka/meshes/finger1_grp.STL" />
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="g1_to_f1_grp" type="fixed">
+        #0.006 0.0209 0.0165
+        <origin xyz="0.0209 -0.0053 0.0165" rpy="0 1.5708 0" />
+        <parent link="guide_1_grp" />
+        <child link="finger1_grp" />
+        <axis xyz="0 0 0" />
+    </joint>
+
+    <link name="finger2_grp">
+        <inertial>
+            <origin xyz="0.0099787 0.037092 0.006" rpy="0 0 0" />
+            <mass value="0.091368" />
+            <inertia ixx="0.0000410" ixy="-0.0000150" ixz="0.0" iyy="0.000018" iyz="0.0" izz="0.0000576" />
+        </inertial>
+
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://gripper_schunk_kuka/meshes/finger1_grp.STL" />
+            </geometry>
+            <material name="">
+                <color rgba="0.75294 1 1 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://gripper_schunk_kuka/meshes/finger1_grp.STL" />
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="g2_to_f2_grp" type="fixed">
+        <origin xyz="0.0209 -0.0053 0.0165" rpy="0 1.5708 0" />
+        <parent link="guide_2_grp" />
+        <child link="finger2_grp" />
+        <axis xyz="0 0 0" />
+    </joint>
+
+    <link name="finger3_grp">
+        <inertial>
+            <origin xyz="0.0099787 0.037092 0.006" rpy="0 0 0" />
+            <mass value="0.091368" />
+            <inertia ixx="0.0000410" ixy="-0.0000150" ixz="0.0" iyy="0.000018" iyz="0.0" izz="0.0000576" />
+        </inertial>
+
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://gripper_schunk_kuka/meshes/finger1_grp.STL" />
+            </geometry>
+            <material name="">
+                <color rgba="0.75294 1 1 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://gripper_schunk_kuka/meshes/finger1_grp.STL" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="g3_to_f3_grp" type="fixed">
+        <origin xyz="0.0209 -0.0053 0.0165" rpy="0 1.5708 0" />
+        <parent link="guide_3_grp" />
+        <child link="finger3_grp" />
+        <axis xyz="0 0 0" />
+    </joint>
+
+<!-- *********************** TRANSMITIONS ************************* -->
+
+    <transmission name="trans_base_to_link1">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="base_to_link1">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="base_to_link1_motor">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="trans_link1_to_link2">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="link1_to_link2">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="link1_to_link2_motor">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="trans_link2_to_link3">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="link2_to_link3">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="link2_to_link3_motor">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="trans_link3_to_link4">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="link3_to_link4">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="link3_to_link4_motor">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="trans_link4_to_link5">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="link4_to_link5">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="link4_to_link5_motor">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="trans_link5_to_link6">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="link5_to_link6">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="link5_to_link6_motor">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="trans_str_to_g1_grp">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="str_to_g1_grp">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="str_to_g1_grp_motor">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="trans_str_to_g2_grp">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="str_to_g2_grp">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="str_to_g2_grp_motor">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="trans_str_to_g3_grp">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="str_to_g3_grp">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="str_to_g3_grp_motor">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+
+    <!-- ***************** Gazebo plugin for ROS Control ********************** -->
+    <gazebo>
+        <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+            <robotNamespace>/</robotNamespace>
+        </plugin>
+    </gazebo>
+</robot>

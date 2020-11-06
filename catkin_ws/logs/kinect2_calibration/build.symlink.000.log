@@ -1,0 +1,4 @@
+Symlinking /home/pc-proyecto/Manipulacion/catkin_ws/devel/lib/kinect2_calibration/kinect2_calibration
+Symlinking /home/pc-proyecto/Manipulacion/catkin_ws/devel/lib/pkgconfig/kinect2_calibration.pc
+Symlinking /home/pc-proyecto/Manipulacion/catkin_ws/devel/share/kinect2_calibration/cmake/kinect2_calibrationConfig.cmake
+Symlinking /home/pc-proyecto/Manipulacion/catkin_ws/devel/share/kinect2_calibration/cmake/kinect2_calibrationConfig-version.cmake

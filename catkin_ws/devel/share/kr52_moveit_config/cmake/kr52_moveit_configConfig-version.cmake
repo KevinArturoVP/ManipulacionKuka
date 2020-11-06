@@ -1,0 +1,1 @@
+/home/pc-proyecto/Manipulacion/catkin_ws/devel/.private/kr52_moveit_config/share/kr52_moveit_config/cmake/kr52_moveit_configConfig-version.cmake

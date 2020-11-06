@@ -1,0 +1,16 @@
+<!--package>
+  <description brief="joint_trajectory_action">
+
+     joint_trajectory_action
+
+  </description>
+  <author>pc-proyecto</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/joint_trajectory_action</url>
+  <depend package="actionlib"/>
+  <depend package="roscpp"/>
+
+</package-->
+
+

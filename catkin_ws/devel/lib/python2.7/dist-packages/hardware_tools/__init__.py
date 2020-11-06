@@ -1,0 +1,1 @@
+/home/pc-proyecto/Manipulacion/catkin_ws/devel/.private/hardware_tools/lib/python2.7/dist-packages/hardware_tools/__init__.py

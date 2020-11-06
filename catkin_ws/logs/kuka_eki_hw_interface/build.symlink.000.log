@@ -1,0 +1,5 @@
+Symlinking /home/pc-proyecto/Manipulacion/catkin_ws/devel/lib/libkuka_eki_hw_interface.so
+Symlinking /home/pc-proyecto/Manipulacion/catkin_ws/devel/lib/kuka_eki_hw_interface/kuka_eki_hw_interface_node
+Symlinking /home/pc-proyecto/Manipulacion/catkin_ws/devel/lib/pkgconfig/kuka_eki_hw_interface.pc
+Symlinking /home/pc-proyecto/Manipulacion/catkin_ws/devel/share/kuka_eki_hw_interface/cmake/kuka_eki_hw_interfaceConfig-version.cmake
+Symlinking /home/pc-proyecto/Manipulacion/catkin_ws/devel/share/kuka_eki_hw_interface/cmake/kuka_eki_hw_interfaceConfig.cmake

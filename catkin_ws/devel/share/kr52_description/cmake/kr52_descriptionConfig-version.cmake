@@ -1,0 +1,1 @@
+/home/pc-proyecto/Manipulacion/catkin_ws/devel/.private/kr52_description/share/kr52_description/cmake/kr52_descriptionConfig-version.cmake

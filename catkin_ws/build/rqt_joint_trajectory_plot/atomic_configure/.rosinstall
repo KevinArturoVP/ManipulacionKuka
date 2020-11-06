@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/pc-proyecto/Manipulacion/catkin_ws/devel/.private/rqt_joint_trajectory_plot/setup.sh

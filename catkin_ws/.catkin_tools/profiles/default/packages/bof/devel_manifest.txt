@@ -1,0 +1,5 @@
+vision/bof
+/home/pc_proyecto/Manipulacion/catkin_ws/devel/.private/bof/cmake.lock /home/pc_proyecto/Manipulacion/catkin_ws/devel/./cmake.lock
+/home/pc_proyecto/Manipulacion/catkin_ws/devel/.private/bof/lib/pkgconfig/bof.pc /home/pc_proyecto/Manipulacion/catkin_ws/devel/lib/pkgconfig/bof.pc
+/home/pc_proyecto/Manipulacion/catkin_ws/devel/.private/bof/share/bof/cmake/bofConfig.cmake /home/pc_proyecto/Manipulacion/catkin_ws/devel/share/bof/cmake/bofConfig.cmake
+/home/pc_proyecto/Manipulacion/catkin_ws/devel/.private/bof/share/bof/cmake/bofConfig-version.cmake /home/pc_proyecto/Manipulacion/catkin_ws/devel/share/bof/cmake/bofConfig-version.cmake

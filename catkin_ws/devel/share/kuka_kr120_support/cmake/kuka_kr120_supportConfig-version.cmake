@@ -1,0 +1,1 @@
+/home/pc-proyecto/Manipulacion/catkin_ws/devel/.private/kuka_kr120_support/share/kuka_kr120_support/cmake/kuka_kr120_supportConfig-version.cmake

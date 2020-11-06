@@ -1,0 +1,8 @@
+prefix=/home/pc-proyecto/Manipulacion/catkin_ws/devel/.private/kuka_rsi_simulator
+
+Name: kuka_rsi_simulator
+Description: Description of kuka_rsi_simulator
+Version: 0.1.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="gripper_schunk_kuka">
+  <link
+    name="base_link_grp">
+    <inertial>
+      <origin
+        xyz="-0.12444 0.015119 0.11802"
+        rpy="0 0 0" />
+      <mass
+        value="4.3869E-05" />
+      <inertia
+        ixx="2.7228E-08"
+        ixy="3.0486E-12"
+        ixz="-9.7953E-11"
+        iyy="5.2891E-08"
+        iyz="-8.2542E-13"
+        izz="2.5932E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gripper_schunk_kuka/meshes/base_link_grp.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gripper_schunk_kuka/meshes/base_link_grp.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="structure_grp">
+    <inertial>
+      <origin
+        xyz="-0.00021291 0.023532 3.5559E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.00035228" />
+      <inertia
+        ixx="3.1958E-07"
+        ixy="-1.5683E-10"
+        ixz="-2.4056E-09"
+        iyy="5.08E-07"
+        iyz="-5.9261E-10"
+        izz="3.2245E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gripper_schunk_kuka/meshes/structure_grp.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gripper_schunk_kuka/meshes/structure_grp.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="base_to_str_grp"
+    type="fixed">
+    <origin
+      xyz="-0.12498 -0.11817 0.018142"
+      rpy="1.5708 0 2.618" />
+    <parent
+      link="base_link_grp" />
+    <child
+      link="structure_grp" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+
+  <link
+    name="guide_1_grp">
+    <inertial>
+      <origin
+        xyz="9.8421E-12 0.0094502 0.027502"
+        rpy="0 0 0" />
+      <mass
+        value="2.1395E-05" />
+      <inertia
+        ixx="5.8843E-09"
+        ixy="1.1603E-18"
+        ixz="4.0999E-18"
+        iyy="6.0491E-09"
+        iyz="-7.7428E-11"
+        izz="1.5164E-09" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gripper_schunk_kuka/meshes/guide_1_grp.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gripper_schunk_kuka/meshes/guide_1_grp.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="str_to_g1_grp"
+    type="fixed">
+    <origin
+      xyz="0 0.0321 -0.0043"
+      rpy="3.1416 0 3.1416" />
+    <parent
+      link="structure_grp" />
+    <child
+      link="guide_1_grp" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="finger1_grp">
+    <inertial>
+      <origin
+        xyz="0.0099787 0.037092 0.006"
+        rpy="0 0 0" />
+      <mass
+        value="0.03384" />
+      <inertia
+        ixx="1.5168E-05"
+        ixy="5.5629E-06"
+        ixz="5.5057E-21"
+        iyy="6.9613E-06"
+        iyz="-2.9646E-21"
+        izz="2.1317E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gripper_schunk_kuka/meshes/finger1_grp.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gripper_schunk_kuka/meshes/finger1_grp.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="g1_to_f1_grp"
+    type="fixed">
+    <origin
+      xyz="0.006 0.0209 0.0165"
+      rpy="0 -1.5708 0" />
+    <parent
+      link="guide_1_grp" />
+    <child
+      link="finger1_grp" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+
+  <link
+    name="guide_2_grp">
+    <inertial>
+      <origin
+        xyz="9.84202996878736E-12 0.00945024176112787 0.0275015665025582"
+        rpy="0 0 0" />
+      <mass
+        value="2.13946053960986E-05" />
+      <inertia
+        ixx="5.88431731307912E-09"
+        ixy="1.15652657683827E-18"
+        ixz="4.16310883451617E-18"
+        iyy="6.04914588284188E-09"
+        iyz="-7.74283160161931E-11"
+        izz="1.51641396909182E-09" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gripper_schunk_kuka/meshes/guide_2_grp.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gripper_schunk_kuka/meshes/guide_2_grp.STL" />
+      </geometry>
+    </collision>
+  </link>
+
+  <joint
+    name="str_to_g2_grp"
+    type="fixed">
+    <origin
+      xyz="-0.0037239 0.0321 0.00215"
+      rpy="0 -1.0472 0" />
+    <parent
+      link="structure_grp" />
+    <child
+      link="guide_2_grp" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+
+
+  <link
+    name="finger2_grp">
+    <inertial>
+      <origin
+        xyz="0.0099787 0.037092 0.006"
+        rpy="0 0 0" />
+      <mass
+        value="0.03384" />
+      <inertia
+        ixx="1.5168E-05"
+        ixy="5.5629E-06"
+        ixz="4.768E-23"
+        iyy="6.9613E-06"
+        iyz="1.4988E-22"
+        izz="2.1317E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gripper_schunk_kuka/meshes/finger2_grp.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gripper_schunk_kuka/meshes/finger2_grp.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="g2_to_f2_grp"
+    type="fixed">
+    <origin
+      xyz="0.006 0.0209 0.0165"
+      rpy="3.1416 -1.5708 0" />
+    <parent
+      link="guide_2_grp" />
+    <child
+      link="finger2_grp" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="guide_3_grp">
+    <inertial>
+      <origin
+        xyz="0.0087239 0.0094502 0.025291"
+        rpy="0 0 0" />
+      <mass
+        value="2.1395E-05" />
+      <inertia
+        ixx="5.8843E-09"
+        ixy="1.1603E-18"
+        ixz="4.0999E-18"
+        iyy="6.0491E-09"
+        iyz="-7.7428E-11"
+        izz="1.5164E-09" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gripper_schunk_kuka/meshes/guide_3_grp.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gripper_schunk_kuka/meshes/guide_3_grp.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="str_to_g3_grp"
+    type="fixed">
+    <origin
+      xyz="0.0012761 0.0321 0.01081"
+      rpy="0 1.0472 0" />
+    <parent
+      link="structure_grp" />
+    <child
+      link="guide_3_grp" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="finger3_grp">
+    <inertial>
+      <origin
+        xyz="0.0099787 0.037092 0.006"
+        rpy="0 0 0" />
+      <mass
+        value="0.03384" />
+      <inertia
+        ixx="1.5168E-05"
+        ixy="5.5629E-06"
+        ixz="-6.7763E-21"
+        iyy="6.9613E-06"
+        iyz="4.6587E-21"
+        izz="2.1317E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gripper_schunk_kuka/meshes/finger3_grp.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gripper_schunk_kuka/meshes/finger3_grp.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="g3_to_f3_grp"
+    type="fixed">
+    <origin
+      xyz="0.014724 0.0209 0.01429"
+      rpy="3.1416 -1.5708 0" />
+    <parent
+      link="guide_3_grp" />
+    <child
+      link="finger3_grp" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>

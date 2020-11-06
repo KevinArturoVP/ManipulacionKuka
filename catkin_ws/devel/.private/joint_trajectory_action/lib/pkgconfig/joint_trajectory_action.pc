@@ -1,0 +1,8 @@
+prefix=/home/pc-proyecto/Manipulacion/catkin_ws/devel/.private/joint_trajectory_action
+
+Name: joint_trajectory_action
+Description: Description of joint_trajectory_action
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

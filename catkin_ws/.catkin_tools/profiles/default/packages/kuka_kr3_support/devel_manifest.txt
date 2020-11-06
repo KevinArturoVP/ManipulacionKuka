@@ -1,0 +1,5 @@
+kuka_experimental/kuka_kr3_support
+/home/pc-proyecto/Manipulacion/catkin_ws/devel/.private/kuka_kr3_support/cmake.lock /home/pc-proyecto/Manipulacion/catkin_ws/devel/./cmake.lock
+/home/pc-proyecto/Manipulacion/catkin_ws/devel/.private/kuka_kr3_support/lib/pkgconfig/kuka_kr3_support.pc /home/pc-proyecto/Manipulacion/catkin_ws/devel/lib/pkgconfig/kuka_kr3_support.pc
+/home/pc-proyecto/Manipulacion/catkin_ws/devel/.private/kuka_kr3_support/share/kuka_kr3_support/cmake/kuka_kr3_supportConfig-version.cmake /home/pc-proyecto/Manipulacion/catkin_ws/devel/share/kuka_kr3_support/cmake/kuka_kr3_supportConfig-version.cmake
+/home/pc-proyecto/Manipulacion/catkin_ws/devel/.private/kuka_kr3_support/share/kuka_kr3_support/cmake/kuka_kr3_supportConfig.cmake /home/pc-proyecto/Manipulacion/catkin_ws/devel/share/kuka_kr3_support/cmake/kuka_kr3_supportConfig.cmake

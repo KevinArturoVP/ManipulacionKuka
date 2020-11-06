@@ -1,0 +1,5 @@
+knowledge
+/home/pc-proyecto/Manipulacion/catkin_ws/devel/.private/knowledge/cmake.lock /home/pc-proyecto/Manipulacion/catkin_ws/devel/./cmake.lock
+/home/pc-proyecto/Manipulacion/catkin_ws/devel/.private/knowledge/lib/pkgconfig/knowledge.pc /home/pc-proyecto/Manipulacion/catkin_ws/devel/lib/pkgconfig/knowledge.pc
+/home/pc-proyecto/Manipulacion/catkin_ws/devel/.private/knowledge/share/knowledge/cmake/knowledgeConfig-version.cmake /home/pc-proyecto/Manipulacion/catkin_ws/devel/share/knowledge/cmake/knowledgeConfig-version.cmake
+/home/pc-proyecto/Manipulacion/catkin_ws/devel/.private/knowledge/share/knowledge/cmake/knowledgeConfig.cmake /home/pc-proyecto/Manipulacion/catkin_ws/devel/share/knowledge/cmake/knowledgeConfig.cmake

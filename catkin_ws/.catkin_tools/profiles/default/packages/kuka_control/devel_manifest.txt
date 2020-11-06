@@ -1,0 +1,7 @@
+kuka_kr52/kuka_control
+/home/pc-proyecto/Manipulacion/catkin_ws/devel/.private/kuka_control/cmake.lock /home/pc-proyecto/Manipulacion/catkin_ws/devel/./cmake.lock
+/home/pc-proyecto/Manipulacion/catkin_ws/devel/.private/kuka_control/lib/libkuka_control.so /home/pc-proyecto/Manipulacion/catkin_ws/devel/lib/libkuka_control.so
+/home/pc-proyecto/Manipulacion/catkin_ws/devel/.private/kuka_control/lib/kuka_control/plate_control_node /home/pc-proyecto/Manipulacion/catkin_ws/devel/lib/kuka_control/plate_control_node
+/home/pc-proyecto/Manipulacion/catkin_ws/devel/.private/kuka_control/lib/pkgconfig/kuka_control.pc /home/pc-proyecto/Manipulacion/catkin_ws/devel/lib/pkgconfig/kuka_control.pc
+/home/pc-proyecto/Manipulacion/catkin_ws/devel/.private/kuka_control/share/kuka_control/cmake/kuka_controlConfig-version.cmake /home/pc-proyecto/Manipulacion/catkin_ws/devel/share/kuka_control/cmake/kuka_controlConfig-version.cmake
+/home/pc-proyecto/Manipulacion/catkin_ws/devel/.private/kuka_control/share/kuka_control/cmake/kuka_controlConfig.cmake /home/pc-proyecto/Manipulacion/catkin_ws/devel/share/kuka_control/cmake/kuka_controlConfig.cmake

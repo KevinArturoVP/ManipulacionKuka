@@ -1,0 +1,1 @@
+/home/pc-proyecto/Manipulacion/catkin_ws/devel/.private/point_cloud_manager/share/common-lisp/ros/point_cloud_manager/srv/point_cloud_manager-srv.asd

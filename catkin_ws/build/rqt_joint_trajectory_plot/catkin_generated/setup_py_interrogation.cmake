@@ -1,0 +1,7 @@
+set(rqt_joint_trajectory_plot_SETUP_PY_SETUP_MODULE "distutils.core")
+set(rqt_joint_trajectory_plot_SETUP_PY_VERSION "0.0.5")
+set(rqt_joint_trajectory_plot_SETUP_PY_SCRIPTS "script/joint_trajectory_generator.py")
+set(rqt_joint_trajectory_plot_SETUP_PY_PACKAGES "rqt_joint_trajectory_plot")
+set(rqt_joint_trajectory_plot_SETUP_PY_PACKAGE_DIRS "src/rqt_joint_trajectory_plot")
+set(rqt_joint_trajectory_plot_SETUP_PY_MODULES "")
+set(rqt_joint_trajectory_plot_SETUP_PY_MODULE_DIRS "")

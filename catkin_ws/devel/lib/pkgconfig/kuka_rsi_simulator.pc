@@ -1,0 +1,1 @@
+/home/pc-proyecto/Manipulacion/catkin_ws/devel/.private/kuka_rsi_simulator/lib/pkgconfig/kuka_rsi_simulator.pc

@@ -1,0 +1,1 @@
+/home/pc-proyecto/Manipulacion/catkin_ws/devel/.private/kuka_kr6_support/lib/pkgconfig/kuka_kr6_support.pc

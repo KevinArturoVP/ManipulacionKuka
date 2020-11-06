@@ -1,0 +1,8 @@
+prefix=/home/pc-proyecto/Manipulacion/catkin_ws/install
+
+Name: gripper_schunk_kuka
+Description: Description of gripper_schunk_kuka
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

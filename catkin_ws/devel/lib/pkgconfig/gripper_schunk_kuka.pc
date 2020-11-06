@@ -1,0 +1,1 @@
+/home/pc-proyecto/Manipulacion/catkin_ws/devel/.private/gripper_schunk_kuka/lib/pkgconfig/gripper_schunk_kuka.pc

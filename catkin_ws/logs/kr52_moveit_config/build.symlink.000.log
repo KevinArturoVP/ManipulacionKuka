@@ -1,0 +1,3 @@
+Symlinking /home/pc-proyecto/Manipulacion/catkin_ws/devel/lib/pkgconfig/kr52_moveit_config.pc
+Symlinking /home/pc-proyecto/Manipulacion/catkin_ws/devel/share/kr52_moveit_config/cmake/kr52_moveit_configConfig.cmake
+Symlinking /home/pc-proyecto/Manipulacion/catkin_ws/devel/share/kr52_moveit_config/cmake/kr52_moveit_configConfig-version.cmake

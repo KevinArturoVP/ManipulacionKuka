@@ -1,0 +1,1 @@
+/home/pc-proyecto/Manipulacion/catkin_ws/devel/.private/assembly_kuka_simp/share/assembly_kuka_simp/cmake/assembly_kuka_simpConfig.cmake

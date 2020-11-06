@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/pc-proyecto/Manipulacion/catkin_ws/devel/.private/kr52_moveit_config/setup.sh

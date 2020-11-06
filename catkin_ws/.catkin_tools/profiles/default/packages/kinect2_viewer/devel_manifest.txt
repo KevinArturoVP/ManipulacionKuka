@@ -1,0 +1,6 @@
+iai_kinect2/kinect2_viewer
+/home/pc-proyecto/Manipulacion/catkin_ws/devel/.private/kinect2_viewer/cmake.lock /home/pc-proyecto/Manipulacion/catkin_ws/devel/./cmake.lock
+/home/pc-proyecto/Manipulacion/catkin_ws/devel/.private/kinect2_viewer/lib/pkgconfig/kinect2_viewer.pc /home/pc-proyecto/Manipulacion/catkin_ws/devel/lib/pkgconfig/kinect2_viewer.pc
+/home/pc-proyecto/Manipulacion/catkin_ws/devel/.private/kinect2_viewer/lib/kinect2_viewer/kinect2_viewer /home/pc-proyecto/Manipulacion/catkin_ws/devel/lib/kinect2_viewer/kinect2_viewer
+/home/pc-proyecto/Manipulacion/catkin_ws/devel/.private/kinect2_viewer/share/kinect2_viewer/cmake/kinect2_viewerConfig.cmake /home/pc-proyecto/Manipulacion/catkin_ws/devel/share/kinect2_viewer/cmake/kinect2_viewerConfig.cmake
+/home/pc-proyecto/Manipulacion/catkin_ws/devel/.private/kinect2_viewer/share/kinect2_viewer/cmake/kinect2_viewerConfig-version.cmake /home/pc-proyecto/Manipulacion/catkin_ws/devel/share/kinect2_viewer/cmake/kinect2_viewerConfig-version.cmake

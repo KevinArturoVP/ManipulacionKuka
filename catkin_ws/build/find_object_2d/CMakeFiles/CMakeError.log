@@ -1,0 +1,55 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/pc-proyecto/Manipulacion/catkin_ws/build/find_object_2d/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_747ff/fast"
+/usr/bin/make -f CMakeFiles/cmTC_747ff.dir/build.make CMakeFiles/cmTC_747ff.dir/build
+make[1]: se entra en el directorio '/home/pc-proyecto/Manipulacion/catkin_ws/build/find_object_2d/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_747ff.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_747ff.dir/CheckSymbolExists.c.o   -c /home/pc-proyecto/Manipulacion/catkin_ws/build/find_object_2d/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_747ff
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_747ff.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_747ff.dir/CheckSymbolExists.c.o  -o cmTC_747ff 
+CMakeFiles/cmTC_747ff.dir/CheckSymbolExists.c.o: En la función `main':
+CheckSymbolExists.c:(.text+0x1b): referencia a `pthread_create' sin definir
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_747ff.dir/build.make:97: fallo en las instrucciones para el objetivo 'cmTC_747ff'
+make[1]: *** [cmTC_747ff] Error 1
+make[1]: se sale del directorio '/home/pc-proyecto/Manipulacion/catkin_ws/build/find_object_2d/CMakeFiles/CMakeTmp'
+Makefile:126: fallo en las instrucciones para el objetivo 'cmTC_747ff/fast'
+make: *** [cmTC_747ff/fast] Error 2
+
+File /home/pc-proyecto/Manipulacion/catkin_ws/build/find_object_2d/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/pc-proyecto/Manipulacion/catkin_ws/build/find_object_2d/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_0de8f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_0de8f.dir/build.make CMakeFiles/cmTC_0de8f.dir/build
+make[1]: se entra en el directorio '/home/pc-proyecto/Manipulacion/catkin_ws/build/find_object_2d/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0de8f.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_0de8f.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_0de8f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0de8f.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_0de8f.dir/CheckFunctionExists.c.o  -o cmTC_0de8f -lpthreads 
+/usr/bin/ld: no se puede encontrar -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_0de8f.dir/build.make:97: fallo en las instrucciones para el objetivo 'cmTC_0de8f'
+make[1]: *** [cmTC_0de8f] Error 1
+make[1]: se sale del directorio '/home/pc-proyecto/Manipulacion/catkin_ws/build/find_object_2d/CMakeFiles/CMakeTmp'
+Makefile:126: fallo en las instrucciones para el objetivo 'cmTC_0de8f/fast'
+make: *** [cmTC_0de8f/fast] Error 2
+
+

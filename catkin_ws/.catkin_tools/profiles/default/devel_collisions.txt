@@ -1,0 +1,2 @@
+/home/pc_proyecto/Manipulacion/catkin_ws/devel/./cmake.lock 3979
+/home/pc-proyecto/Manipulacion/catkin_ws/devel/./cmake.lock 4321

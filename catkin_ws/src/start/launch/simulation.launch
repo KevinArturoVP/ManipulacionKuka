@@ -1,0 +1,44 @@
+<launch>
+
+  <!--include file="$(find kinect2_bridge)/launch/kinect2_bridge.launch" /-->
+
+  <include file="$(find kinect2_bridge)/launch/kinect2_bridge.launch">
+	<arg name="depth_method" default="opencl"/>
+	<arg name="reg_method" default="opencl"/>
+  </include>
+
+  <arg name="rvizconfig" default="$(find assembly_kuka_simp)/rviz/urdf_sim.rviz" />
+  <arg name="gui" default="true" />
+
+  <group ns="kuka">
+    <arg name="model" default="$(find assembly_kuka_simp)/urdf/kuka_modelo.urdf"/>
+    <param name="robot_description" command="cat $(find assembly_kuka_simp)/urdf/kuka_modelo.urdf" />
+    <node name="robot_state_publisher_kuka" pkg="robot_state_publisher" type="state_publisher"/>
+    <!--aram name="use_gui" value="$(arg gui)" /-->
+    <node name="joint_state_publisher_kuka" pkg="joint_state_publisher" type="joint_state_publisher" />
+  </group>
+  
+  <group ns="kinect">
+    <arg name="model" default="$(find knowledge)/harware/kinect.xml"/>
+    <param name="robot_description" command="cat $(find knowledge)/hardware/kinect.xml" />
+    <node name="my_stp" pkg="tf" type="static_transform_publisher" args="1.5 1.5 0 3.14159 0 0 base_link base_link_kinect 100"/>
+    <node name="robot_state_publisher_kinect" pkg="robot_state_publisher" type="state_publisher"/>
+    <node name="joint_state_publisher_kinect" pkg="joint_state_publisher" type="joint_state_publisher" />
+
+    <node name="head_simul" pkg="head" type="head_simul_node.py" output="screen"/>
+  </group>
+
+  <group ns="hardware">
+    <node name="kinect_man" pkg="kinect_mannager_2" type="kinect_mannager_2_node" output="screen"/>
+    <!--node name="head_simul" pkg="head" type="head_simul_node.py" output="screen"/-->
+  </group>
+
+  <group ns="hri">
+    <node name="rviz" pkg="rviz" type="rviz" respawn="false" output="screen" args="-d $(arg rvizconfig)" required="true" />
+  </group>
+
+  <group ns="vision">
+    <node name="obj_angle_calc" pkg="obj_angle_calc" type="obj_angle_calc_node" output="screen"/>
+  </group>
+
+</launch>

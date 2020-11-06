@@ -1,0 +1,8 @@
+prefix=/home/pc-proyecto/Manipulacion/catkin_ws/devel/.private/kinect_mannager_2
+
+Name: kinect_mannager_2
+Description: Description of kinect_mannager_2
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

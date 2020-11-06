@@ -1,0 +1,1 @@
+/home/pc-proyecto/Manipulacion/catkin_ws/devel/.private/find_object_2d/share/find_object_2d/cmake/find_object_2dConfig-version.cmake

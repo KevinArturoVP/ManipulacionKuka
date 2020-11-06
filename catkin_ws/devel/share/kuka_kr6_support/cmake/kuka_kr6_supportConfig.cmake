@@ -1,0 +1,1 @@
+/home/pc-proyecto/Manipulacion/catkin_ws/devel/.private/kuka_kr6_support/share/kuka_kr6_support/cmake/kuka_kr6_supportConfig.cmake

@@ -1,0 +1,27 @@
+digraph G {
+"head_link2" -> "kinect2_ir_optical_frame"[label="Broadcaster: /robot_state_publisher_kinect\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1582657011.189 sec old)\nBuffer length: 0.000 sec\n"];
+"head_link1" -> "head_link2"[label="Broadcaster: /robot_state_publisher_kinect\nAverage rate: 30.201 Hz\nMost recent transform: 1582657011.155 ( 0.034 sec old)\nBuffer length: 4.901 sec\n"];
+"kinect2_ir_optical_frame" -> "kinect2_rgb_optical_frame"[label="Broadcaster: /robot_state_publisher_kinect\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1582657011.189 sec old)\nBuffer length: 0.000 sec\n"];
+"torso_link" -> "head_link1"[label="Broadcaster: /robot_state_publisher_kinect\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1582657011.189 sec old)\nBuffer length: 0.000 sec\n"];
+"base_link_kinect" -> "torso_link"[label="Broadcaster: /robot_state_publisher_kinect\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1582657011.189 sec old)\nBuffer length: 0.000 sec\n"];
+"base_link" -> "base_link_kinect"[label="Broadcaster: /my_stp\nAverage rate: 10.185 Hz\nMost recent transform: 1582657011.240 ( -0.052 sec old)\nBuffer length: 4.811 sec\n"];
+"base_link_grp" -> "structure_grp"[label="Broadcaster: /kuka/robot_state_publisher\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1582657011.189 sec old)\nBuffer length: 0.000 sec\n"];
+"link_6" -> "base_link_grp"[label="Broadcaster: /kuka/robot_state_publisher\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1582657011.189 sec old)\nBuffer length: 0.000 sec\n"];
+"guide_1_grp" -> "finger1_grp"[label="Broadcaster: /kuka/robot_state_publisher\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1582657011.189 sec old)\nBuffer length: 0.000 sec\n"];
+"structure_grp" -> "guide_1_grp"[label="Broadcaster: /kuka/robot_state_publisher\nAverage rate: 10.201 Hz\nMost recent transform: 1582657011.185 ( 0.004 sec old)\nBuffer length: 4.901 sec\n"];
+"guide_2_grp" -> "finger2_grp"[label="Broadcaster: /kuka/robot_state_publisher\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1582657011.189 sec old)\nBuffer length: 0.000 sec\n"];
+"structure_grp" -> "guide_2_grp"[label="Broadcaster: /kuka/robot_state_publisher\nAverage rate: 10.201 Hz\nMost recent transform: 1582657011.185 ( 0.004 sec old)\nBuffer length: 4.901 sec\n"];
+"guide_3_grp" -> "finger3_grp"[label="Broadcaster: /kuka/robot_state_publisher\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1582657011.189 sec old)\nBuffer length: 0.000 sec\n"];
+"structure_grp" -> "guide_3_grp"[label="Broadcaster: /kuka/robot_state_publisher\nAverage rate: 10.201 Hz\nMost recent transform: 1582657011.185 ( 0.004 sec old)\nBuffer length: 4.901 sec\n"];
+"link_5" -> "link_6"[label="Broadcaster: /kuka/robot_state_publisher\nAverage rate: 10.201 Hz\nMost recent transform: 1582657011.185 ( 0.004 sec old)\nBuffer length: 4.901 sec\n"];
+"world" -> "base_link"[label="Broadcaster: /kuka/robot_state_publisher\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1582657011.189 sec old)\nBuffer length: 0.000 sec\n"];
+"base_link" -> "link_1"[label="Broadcaster: /kuka/robot_state_publisher\nAverage rate: 10.201 Hz\nMost recent transform: 1582657011.185 ( 0.004 sec old)\nBuffer length: 4.901 sec\n"];
+"link_1" -> "link_2"[label="Broadcaster: /kuka/robot_state_publisher\nAverage rate: 10.201 Hz\nMost recent transform: 1582657011.185 ( 0.004 sec old)\nBuffer length: 4.901 sec\n"];
+"link_2" -> "link_3"[label="Broadcaster: /kuka/robot_state_publisher\nAverage rate: 10.201 Hz\nMost recent transform: 1582657011.185 ( 0.004 sec old)\nBuffer length: 4.901 sec\n"];
+"link_3" -> "link_4"[label="Broadcaster: /kuka/robot_state_publisher\nAverage rate: 10.201 Hz\nMost recent transform: 1582657011.185 ( 0.004 sec old)\nBuffer length: 4.901 sec\n"];
+"link_4" -> "link_5"[label="Broadcaster: /kuka/robot_state_publisher\nAverage rate: 10.201 Hz\nMost recent transform: 1582657011.185 ( 0.004 sec old)\nBuffer length: 4.901 sec\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 1582657011.189"[ shape=plaintext ] ;
+ }->"world";
+}

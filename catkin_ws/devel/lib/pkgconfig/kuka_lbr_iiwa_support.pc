@@ -1,0 +1,1 @@
+/home/pc-proyecto/Manipulacion/catkin_ws/devel/.private/kuka_lbr_iiwa_support/lib/pkgconfig/kuka_lbr_iiwa_support.pc

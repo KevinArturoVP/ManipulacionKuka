@@ -1,0 +1,1 @@
+/home/pc-proyecto/Manipulacion/catkin_ws/devel/.private/point_cloud_manager/lib/python2.7/dist-packages/point_cloud_manager/__init__.py

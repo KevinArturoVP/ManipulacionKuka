@@ -1,0 +1,1 @@
+/home/pc-proyecto/Manipulacion/catkin_ws/devel/.private/rqt_joint_trajectory_plot/lib/python2.7/dist-packages/rqt_joint_trajectory_plot/__init__.py

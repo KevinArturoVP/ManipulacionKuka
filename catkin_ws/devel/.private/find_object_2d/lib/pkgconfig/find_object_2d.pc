@@ -1,0 +1,8 @@
+prefix=/home/pc-proyecto/Manipulacion/catkin_ws/devel/.private/find_object_2d
+
+Name: find_object_2d
+Description: Description of find_object_2d
+Version: 0.6.2
+Cflags: -I/home/pc-proyecto/Manipulacion/catkin_ws/devel/.private/find_object_2d/include
+Libs: -L${prefix}/lib 
+Requires: cv_bridge roscpp rospy sensor_msgs std_msgs image_transport message_filters tf message_runtime

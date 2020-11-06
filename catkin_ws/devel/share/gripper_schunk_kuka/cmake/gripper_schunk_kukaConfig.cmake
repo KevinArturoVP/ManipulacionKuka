@@ -1,0 +1,1 @@
+/home/pc-proyecto/Manipulacion/catkin_ws/devel/.private/gripper_schunk_kuka/share/gripper_schunk_kuka/cmake/gripper_schunk_kukaConfig.cmake

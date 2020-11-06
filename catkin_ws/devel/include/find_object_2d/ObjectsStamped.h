@@ -1,0 +1,1 @@
+/home/pc-proyecto/Manipulacion/catkin_ws/devel/.private/find_object_2d/include/find_object_2d/ObjectsStamped.h

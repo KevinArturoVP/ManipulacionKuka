@@ -1,0 +1,6 @@
+devel_space: /home/pc-proyecto/Manipulacion/catkin_ws/devel
+install: false
+install_space: /home/pc-proyecto/Manipulacion/catkin_ws/install
+profile: default
+source_space: /home/pc-proyecto/Manipulacion/catkin_ws/src
+workspace: /home/pc-proyecto/Manipulacion/catkin_ws

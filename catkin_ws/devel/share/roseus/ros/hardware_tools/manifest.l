@@ -1,0 +1,1 @@
+/home/pc-proyecto/Manipulacion/catkin_ws/devel/.private/hardware_tools/share/roseus/ros/hardware_tools/manifest.l

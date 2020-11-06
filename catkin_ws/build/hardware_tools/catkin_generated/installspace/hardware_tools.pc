@@ -1,0 +1,8 @@
+prefix=/home/pc-proyecto/Manipulacion/catkin_ws/install
+
+Name: hardware_tools
+Description: Description of hardware_tools
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -lhardware_tools
+Requires: geometry_msgs roscpp rospy sensor_msgs std_msgs vision_msgs pcl_conversions std_srvs

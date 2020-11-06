@@ -1,0 +1,7 @@
+collada_urdf/collada_parser
+/home/pc_proyecto/Manipulacion/catkin_ws/devel/.private/collada_parser/cmake.lock /home/pc_proyecto/Manipulacion/catkin_ws/devel/./cmake.lock
+/home/pc_proyecto/Manipulacion/catkin_ws/devel/.private/collada_parser/lib/libcollada_parser.so /home/pc_proyecto/Manipulacion/catkin_ws/devel/lib/libcollada_parser.so
+/home/pc_proyecto/Manipulacion/catkin_ws/devel/.private/collada_parser/lib/libcollada_parser_plugin.so /home/pc_proyecto/Manipulacion/catkin_ws/devel/lib/libcollada_parser_plugin.so
+/home/pc_proyecto/Manipulacion/catkin_ws/devel/.private/collada_parser/lib/pkgconfig/collada_parser.pc /home/pc_proyecto/Manipulacion/catkin_ws/devel/lib/pkgconfig/collada_parser.pc
+/home/pc_proyecto/Manipulacion/catkin_ws/devel/.private/collada_parser/share/collada_parser/cmake/collada_parserConfig.cmake /home/pc_proyecto/Manipulacion/catkin_ws/devel/share/collada_parser/cmake/collada_parserConfig.cmake
+/home/pc_proyecto/Manipulacion/catkin_ws/devel/.private/collada_parser/share/collada_parser/cmake/collada_parserConfig-version.cmake /home/pc_proyecto/Manipulacion/catkin_ws/devel/share/collada_parser/cmake/collada_parserConfig-version.cmake

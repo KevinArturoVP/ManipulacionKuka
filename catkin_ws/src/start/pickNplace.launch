@@ -1,0 +1,7 @@
+<launch>
+
+	<include file="$(find kuka_moveit)/launch/demo.launch" />
+
+	<node name="pick_place" pkg="pick_place" type="pick_place_tutorial"/>
+
+</launch>

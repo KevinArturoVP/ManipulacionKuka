@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/pc-proyecto/Manipulacion/catkin_ws/devel/.private/find_object_2d/setup.sh

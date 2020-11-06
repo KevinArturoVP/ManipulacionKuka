@@ -1,0 +1,1 @@
+/home/pc-proyecto/Manipulacion/catkin_ws/devel/.private/joint_trajectory_action/lib/pkgconfig/joint_trajectory_action.pc

@@ -1,0 +1,8 @@
+collada_urdf/collada_urdf
+/home/pc_proyecto/Manipulacion/catkin_ws/devel/.private/collada_urdf/cmake.lock /home/pc_proyecto/Manipulacion/catkin_ws/devel/./cmake.lock
+/home/pc_proyecto/Manipulacion/catkin_ws/devel/.private/collada_urdf/lib/libcollada_urdf.so /home/pc_proyecto/Manipulacion/catkin_ws/devel/lib/libcollada_urdf.so
+/home/pc_proyecto/Manipulacion/catkin_ws/devel/.private/collada_urdf/lib/collada_urdf/urdf_to_collada /home/pc_proyecto/Manipulacion/catkin_ws/devel/lib/collada_urdf/urdf_to_collada
+/home/pc_proyecto/Manipulacion/catkin_ws/devel/.private/collada_urdf/lib/collada_urdf/collada_to_urdf /home/pc_proyecto/Manipulacion/catkin_ws/devel/lib/collada_urdf/collada_to_urdf
+/home/pc_proyecto/Manipulacion/catkin_ws/devel/.private/collada_urdf/lib/pkgconfig/collada_urdf.pc /home/pc_proyecto/Manipulacion/catkin_ws/devel/lib/pkgconfig/collada_urdf.pc
+/home/pc_proyecto/Manipulacion/catkin_ws/devel/.private/collada_urdf/share/collada_urdf/cmake/collada_urdfConfig-version.cmake /home/pc_proyecto/Manipulacion/catkin_ws/devel/share/collada_urdf/cmake/collada_urdfConfig-version.cmake
+/home/pc_proyecto/Manipulacion/catkin_ws/devel/.private/collada_urdf/share/collada_urdf/cmake/collada_urdfConfig.cmake /home/pc_proyecto/Manipulacion/catkin_ws/devel/share/collada_urdf/cmake/collada_urdfConfig.cmake

@@ -1,0 +1,22 @@
+[  0%] Built target sensor_msgs_generate_messages_lisp
+[  0%] Built target _find_object_2d_generate_messages_check_deps_DetectionInfo
+[  0%] Built target _find_object_2d_generate_messages_check_deps_ObjectsStamped
+[  0%] Built target std_msgs_generate_messages_lisp
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target sensor_msgs_generate_messages_cpp
+[  0%] Built target sensor_msgs_generate_messages_nodejs
+[  0%] Built target std_msgs_generate_messages_nodejs
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target sensor_msgs_generate_messages_py
+[  0%] Built target std_msgs_generate_messages_eus
+[  0%] Built target sensor_msgs_generate_messages_eus
+[  2%] Built target find_object_2d_generate_messages_lisp
+[  5%] Built target find_object_2d_generate_messages_cpp
+[  7%] Built target find_object_2d_generate_messages_nodejs
+[ 11%] Built target find_object_2d_generate_messages_eus
+[ 15%] Built target find_object_2d_generate_messages_py
+[ 15%] Built target find_object_2d_generate_messages
+[ 17%] Built target tf_example
+[ 95%] Built target find_object
+[ 97%] Built target print_objects_detected
+[100%] Built target find_object_2d

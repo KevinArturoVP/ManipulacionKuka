@@ -1,0 +1,1 @@
+/home/pc-proyecto/Manipulacion/catkin_ws/devel/.private/point_cloud_manager/share/point_cloud_manager/cmake/point_cloud_managerConfig-version.cmake

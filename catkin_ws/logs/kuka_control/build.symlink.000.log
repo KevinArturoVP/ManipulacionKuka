@@ -1,0 +1,5 @@
+Symlinking /home/pc-proyecto/Manipulacion/catkin_ws/devel/lib/libkuka_control.so
+Symlinking /home/pc-proyecto/Manipulacion/catkin_ws/devel/lib/kuka_control/plate_control_node
+Symlinking /home/pc-proyecto/Manipulacion/catkin_ws/devel/lib/pkgconfig/kuka_control.pc
+Symlinking /home/pc-proyecto/Manipulacion/catkin_ws/devel/share/kuka_control/cmake/kuka_controlConfig-version.cmake
+Symlinking /home/pc-proyecto/Manipulacion/catkin_ws/devel/share/kuka_control/cmake/kuka_controlConfig.cmake

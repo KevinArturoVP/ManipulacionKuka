@@ -1,0 +1,1 @@
+/home/pc-proyecto/Manipulacion/catkin_ws/devel/.private/point_cloud_manager/include/point_cloud_manager/GetRgbdRequest.h

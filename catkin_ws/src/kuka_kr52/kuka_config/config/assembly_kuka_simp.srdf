@@ -1,0 +1,137 @@
+<?xml version="1.0" ?>
+<!--This does not replace URDF, and is not an extension of URDF.
+    This is a format for representing semantic information about the robot structure.
+    A URDF file must exist for this robot as well, where the joints and the links that are referenced are defined
+-->
+<robot name="assembly_kuka_simp">
+    <!--GROUPS: Representation of a set of joints and links. This can be useful for specifying DOF to plan for, defining arms, end effectors, etc-->
+    <!--LINKS: When a link is specified, the parent joint of that link (if it exists) is automatically included-->
+    <!--JOINTS: When a joint is specified, the child link of that joint (which will always exist) is automatically included-->
+    <!--CHAINS: When a chain is specified, all the links along the chain (including endpoints) are included in the group. Additionally, all the joints that are parents to included links are also included. This means that joints along the chain and the parent joint of the base link are included in the group-->
+    <!--SUBGROUPS: Groups can also be formed by referencing to already defined group names-->
+    <group name="kuka_arm">
+        <chain base_link="world" tip_link="link_6" />
+    </group>
+    <group name="kuka_hand">
+        <link name="base_link_grp" />
+        <link name="structure_grp" />
+        <link name="guide_1_grp" />
+        <link name="finger1_grp" />
+        <link name="guide_2_grp" />
+        <link name="finger2_grp" />
+        <link name="guide_3_grp" />
+        <link name="finger3_grp" />
+    </group>
+    <!--GROUP STATES: Purpose: Define a named state for a particular group, in terms of joint values. This is useful to define states like 'folded arms'-->
+    <group_state name="start" group="kuka_arm">
+        <joint name="base_to_link1" value="0" />
+        <joint name="link1_to_link2" value="0" />
+        <joint name="link2_to_link3" value="0" />
+        <joint name="link3_to_link4" value="0" />
+        <joint name="link4_to_link5" value="0" />
+        <joint name="link5_to_link6" value="0" />
+    </group_state>
+    <group_state name="contracted" group="kuka_arm">
+        <joint name="base_to_link1" value="0" />
+        <joint name="link1_to_link2" value="-0.8157" />
+        <joint name="link2_to_link3" value="0.8505" />
+        <joint name="link3_to_link4" value="0" />
+        <joint name="link4_to_link5" value="0" />
+        <joint name="link5_to_link6" value="0" />
+    </group_state>
+    <group_state name="all_down" group="kuka_arm">
+        <joint name="base_to_link1" value="0" />
+        <joint name="link1_to_link2" value="1.5794" />
+        <joint name="link2_to_link3" value="-1.5794" />
+        <joint name="link3_to_link4" value="0" />
+        <joint name="link4_to_link5" value="0" />
+        <joint name="link5_to_link6" value="0" />
+    </group_state>
+    <group_state name="all_up" group="kuka_arm">
+        <joint name="base_to_link1" value="0" />
+        <joint name="link1_to_link2" value="0" />
+        <joint name="link2_to_link3" value="-1.5447" />
+        <joint name="link3_to_link4" value="0" />
+        <joint name="link4_to_link5" value="0" />
+        <joint name="link5_to_link6" value="0" />
+    </group_state>
+    <group_state name="open" group="kuka_hand">
+        <joint name="str_to_g1_grp" value="0.005" />
+        <joint name="str_to_g2_grp" value="0.005" />
+        <joint name="str_to_g3_grp" value="0.005" />
+    </group_state>
+    <group_state name="close" group="kuka_hand">
+        <joint name="str_to_g1_grp" value="0" />
+        <joint name="str_to_g2_grp" value="0" />
+        <joint name="str_to_g3_grp" value="0" />
+    </group_state>
+    <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
+    <end_effector name="hand" parent_link="link_6" group="kuka_hand" />
+    <!--DISABLE COLLISIONS: By default it is assumed that any link of the robot could potentially come into collision with any other link in the robot. This tag disables collision checking between a specified pair of links. -->
+    <disable_collisions link1="base_link" link2="link_1" reason="Adjacent" />
+    <disable_collisions link1="base_link_grp" link2="finger1_grp" reason="Never" />
+    <disable_collisions link1="base_link_grp" link2="finger2_grp" reason="Never" />
+    <disable_collisions link1="base_link_grp" link2="finger3_grp" reason="Never" />
+    <disable_collisions link1="base_link_grp" link2="guide_1_grp" reason="Never" />
+    <disable_collisions link1="base_link_grp" link2="guide_2_grp" reason="Never" />
+    <disable_collisions link1="base_link_grp" link2="guide_3_grp" reason="Never" />
+    <disable_collisions link1="base_link_grp" link2="link_3" reason="Never" />
+    <disable_collisions link1="base_link_grp" link2="link_5" reason="Never" />
+    <disable_collisions link1="base_link_grp" link2="link_6" reason="Adjacent" />
+    <disable_collisions link1="base_link_grp" link2="structure_grp" reason="Adjacent" />
+    <disable_collisions link1="finger1_grp" link2="finger2_grp" reason="Never" />
+    <disable_collisions link1="finger1_grp" link2="finger3_grp" reason="Never" />
+    <disable_collisions link1="finger1_grp" link2="guide_1_grp" reason="Adjacent" />
+    <disable_collisions link1="finger1_grp" link2="guide_2_grp" reason="Never" />
+    <disable_collisions link1="finger1_grp" link2="guide_3_grp" reason="Never" />
+    <disable_collisions link1="finger1_grp" link2="link_3" reason="Never" />
+    <disable_collisions link1="finger1_grp" link2="link_4" reason="Never" />
+    <disable_collisions link1="finger1_grp" link2="link_5" reason="Never" />
+    <disable_collisions link1="finger1_grp" link2="link_6" reason="Never" />
+    <disable_collisions link1="finger1_grp" link2="structure_grp" reason="Never" />
+    <disable_collisions link1="finger2_grp" link2="finger3_grp" reason="Never" />
+    <disable_collisions link1="finger2_grp" link2="guide_1_grp" reason="Never" />
+    <disable_collisions link1="finger2_grp" link2="guide_2_grp" reason="Adjacent" />
+    <disable_collisions link1="finger2_grp" link2="guide_3_grp" reason="Never" />
+    <disable_collisions link1="finger2_grp" link2="link_3" reason="Never" />
+    <disable_collisions link1="finger2_grp" link2="link_4" reason="Never" />
+    <disable_collisions link1="finger2_grp" link2="link_5" reason="Never" />
+    <disable_collisions link1="finger2_grp" link2="link_6" reason="Never" />
+    <disable_collisions link1="finger2_grp" link2="structure_grp" reason="Never" />
+    <disable_collisions link1="finger3_grp" link2="guide_1_grp" reason="Never" />
+    <disable_collisions link1="finger3_grp" link2="guide_2_grp" reason="Never" />
+    <disable_collisions link1="finger3_grp" link2="guide_3_grp" reason="Adjacent" />
+    <disable_collisions link1="finger3_grp" link2="link_3" reason="Never" />
+    <disable_collisions link1="finger3_grp" link2="link_4" reason="Never" />
+    <disable_collisions link1="finger3_grp" link2="link_5" reason="Never" />
+    <disable_collisions link1="finger3_grp" link2="link_6" reason="Never" />
+    <disable_collisions link1="finger3_grp" link2="structure_grp" reason="Never" />
+    <disable_collisions link1="guide_1_grp" link2="guide_2_grp" reason="Default" />
+    <disable_collisions link1="guide_1_grp" link2="guide_3_grp" reason="Default" />
+    <disable_collisions link1="guide_1_grp" link2="link_3" reason="Never" />
+    <disable_collisions link1="guide_1_grp" link2="link_4" reason="Never" />
+    <disable_collisions link1="guide_1_grp" link2="link_5" reason="Never" />
+    <disable_collisions link1="guide_1_grp" link2="link_6" reason="Never" />
+    <disable_collisions link1="guide_1_grp" link2="structure_grp" reason="Adjacent" />
+    <disable_collisions link1="guide_2_grp" link2="guide_3_grp" reason="Default" />
+    <disable_collisions link1="guide_2_grp" link2="link_3" reason="Never" />
+    <disable_collisions link1="guide_2_grp" link2="link_4" reason="Never" />
+    <disable_collisions link1="guide_2_grp" link2="link_5" reason="Never" />
+    <disable_collisions link1="guide_2_grp" link2="link_6" reason="Never" />
+    <disable_collisions link1="guide_2_grp" link2="structure_grp" reason="Adjacent" />
+    <disable_collisions link1="guide_3_grp" link2="link_3" reason="Never" />
+    <disable_collisions link1="guide_3_grp" link2="link_4" reason="Never" />
+    <disable_collisions link1="guide_3_grp" link2="link_5" reason="Never" />
+    <disable_collisions link1="guide_3_grp" link2="link_6" reason="Never" />
+    <disable_collisions link1="guide_3_grp" link2="structure_grp" reason="Adjacent" />
+    <disable_collisions link1="link_1" link2="link_2" reason="Adjacent" />
+    <disable_collisions link1="link_2" link2="link_3" reason="Adjacent" />
+    <disable_collisions link1="link_3" link2="link_4" reason="Adjacent" />
+    <disable_collisions link1="link_3" link2="link_5" reason="Never" />
+    <disable_collisions link1="link_3" link2="link_6" reason="Never" />
+    <disable_collisions link1="link_3" link2="structure_grp" reason="Never" />
+    <disable_collisions link1="link_4" link2="link_5" reason="Adjacent" />
+    <disable_collisions link1="link_5" link2="link_6" reason="Adjacent" />
+    <disable_collisions link1="link_5" link2="structure_grp" reason="Never" />
+    <disable_collisions link1="link_6" link2="structure_grp" reason="Never" />
+</robot>

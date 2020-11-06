@@ -1,0 +1,8 @@
+prefix=/home/pc-proyecto/Manipulacion/catkin_ws/install
+
+Name: assembly_kuka_simp
+Description: Description of assembly_kuka_simp
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,1 @@
+/home/pc-proyecto/Manipulacion/catkin_ws/devel/.private/kinect2_viewer/share/kinect2_viewer/cmake/kinect2_viewerConfig.cmake

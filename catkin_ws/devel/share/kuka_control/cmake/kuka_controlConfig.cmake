@@ -1,0 +1,1 @@
+/home/pc-proyecto/Manipulacion/catkin_ws/devel/.private/kuka_control/share/kuka_control/cmake/kuka_controlConfig.cmake

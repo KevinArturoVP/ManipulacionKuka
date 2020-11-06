@@ -1,0 +1,5 @@
+Symlinking /home/pc-proyecto/Manipulacion/catkin_ws/devel/lib/libkuka_hardware_interface.so
+Symlinking /home/pc-proyecto/Manipulacion/catkin_ws/devel/lib/kuka_rsi_hw_interface/kuka_hardware_interface_node
+Symlinking /home/pc-proyecto/Manipulacion/catkin_ws/devel/lib/pkgconfig/kuka_rsi_hw_interface.pc
+Symlinking /home/pc-proyecto/Manipulacion/catkin_ws/devel/share/kuka_rsi_hw_interface/cmake/kuka_rsi_hw_interfaceConfig.cmake
+Symlinking /home/pc-proyecto/Manipulacion/catkin_ws/devel/share/kuka_rsi_hw_interface/cmake/kuka_rsi_hw_interfaceConfig-version.cmake

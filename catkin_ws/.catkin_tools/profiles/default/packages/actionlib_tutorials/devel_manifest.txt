@@ -1,0 +1,5 @@
+actionlib_tutorials
+/home/pc_proyecto/Manipulacion/catkin_ws/devel/.private/actionlib_tutorials/cmake.lock /home/pc_proyecto/Manipulacion/catkin_ws/devel/./cmake.lock
+/home/pc_proyecto/Manipulacion/catkin_ws/devel/.private/actionlib_tutorials/lib/pkgconfig/actionlib_tutorials.pc /home/pc_proyecto/Manipulacion/catkin_ws/devel/lib/pkgconfig/actionlib_tutorials.pc
+/home/pc_proyecto/Manipulacion/catkin_ws/devel/.private/actionlib_tutorials/share/actionlib_tutorials/cmake/actionlib_tutorialsConfig.cmake /home/pc_proyecto/Manipulacion/catkin_ws/devel/share/actionlib_tutorials/cmake/actionlib_tutorialsConfig.cmake
+/home/pc_proyecto/Manipulacion/catkin_ws/devel/.private/actionlib_tutorials/share/actionlib_tutorials/cmake/actionlib_tutorialsConfig-version.cmake /home/pc_proyecto/Manipulacion/catkin_ws/devel/share/actionlib_tutorials/cmake/actionlib_tutorialsConfig-version.cmake

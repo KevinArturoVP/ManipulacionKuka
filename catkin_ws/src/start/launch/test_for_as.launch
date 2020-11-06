@@ -1,0 +1,42 @@
+<launch>
+
+	<include file="$(find kinect2_bridge)/launch/kinect2_bridge.launch">
+		<arg name="depth_method" default="opencl"/>
+		<arg name="reg_method" default="opencl"/>
+	</include>
+
+	<arg name="robot_name" default="kuka" />
+	<arg name="use_ros_control" default="False" />
+
+
+	<!-- Load the URDF into the ROS Parameter Server -->
+	<include file="$(find kuka_config)/launch/kr52_upload.launch"/>
+
+
+	<!-- Robot State Publisher, fake calibration & joint state controller -->
+	<include file="$(find kuka_config)/launch/controller_utils.launch"/>
+
+	<rosparam file="$(find kuka_control)/config/arm_controller.yaml" command="load"/>
+	<node name="arm_controller_spawner" pkg="controller_manager" type="controller_manager" args="spawn arm_controller" respawn="false" output="screen"/>
+
+	<!-- start moveit: -->
+	<include file="$(find kuka_config)/launch/start_moveit_gz.launch" />
+
+	<group ns="kinect">
+		<arg name="model" default="$(find knowledge)/harware/kinect.xml"/>
+		<param name="robot_description" command="cat $(find knowledge)/hardware/kinect.xml" />
+		<node name="my_stp" pkg="tf" type="static_transform_publisher" args="0 1.5 0 4.71239 0 0 base_link base_link_kinect 100"/>
+		<node name="robot_state_publisher_kinect" pkg="robot_state_publisher" type="state_publisher"/>
+		<node name="joint_state_publisher_kinect" pkg="joint_state_publisher" type="joint_state_publisher" />
+	</group>
+
+	<group ns="hardware">
+		<node name="kinect_man" pkg="kinect_mannager_2" type="kinect_mannager_2_node" output="screen"/>
+		<!--node name="head_simul" pkg="head" type="head_simul_node.py" output="screen"/-->
+	</group>
+
+	<!--group ns="vision">
+		<node name="obj_angle_calc" pkg="obj_angle_calc" type="obj_angle_calc_node" output="screen"/>
+	</group-->
+
+</launch>

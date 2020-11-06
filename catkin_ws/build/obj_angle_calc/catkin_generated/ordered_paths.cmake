@@ -1,0 +1,1 @@
+set(ORDERED_PATHS "/home/pc-proyecto/Manipulacion/catkin_ws/devel/.private/hardware_tools/lib;/opt/ros/melodic/lib")

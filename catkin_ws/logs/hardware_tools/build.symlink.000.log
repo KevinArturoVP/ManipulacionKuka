@@ -1,0 +1,8 @@
+Symlinking /home/pc-proyecto/Manipulacion/catkin_ws/devel/lib/libhardware_tools.so
+Symlinking /home/pc-proyecto/Manipulacion/catkin_ws/devel/lib/python2.7/dist-packages/hardware_tools/__init__.py
+Symlinking /home/pc-proyecto/Manipulacion/catkin_ws/devel/lib/pkgconfig/hardware_tools.pc
+Symlinking /home/pc-proyecto/Manipulacion/catkin_ws/devel/share/roseus/ros/hardware_tools/manifest.l
+Symlinking /home/pc-proyecto/Manipulacion/catkin_ws/devel/share/hardware_tools/cmake/hardware_tools-msg-extras.cmake
+Symlinking /home/pc-proyecto/Manipulacion/catkin_ws/devel/share/hardware_tools/cmake/hardware_tools-msg-paths.cmake
+Symlinking /home/pc-proyecto/Manipulacion/catkin_ws/devel/share/hardware_tools/cmake/hardware_toolsConfig-version.cmake
+Symlinking /home/pc-proyecto/Manipulacion/catkin_ws/devel/share/hardware_tools/cmake/hardware_toolsConfig.cmake

@@ -1,0 +1,1 @@
+/home/pc-proyecto/Manipulacion/catkin_ws/devel/.private/kuka_resources/share/kuka_resources/cmake/kuka_resourcesConfig.cmake

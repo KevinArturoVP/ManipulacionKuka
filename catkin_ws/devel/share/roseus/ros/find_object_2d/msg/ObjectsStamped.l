@@ -1,0 +1,1 @@
+/home/pc-proyecto/Manipulacion/catkin_ws/devel/.private/find_object_2d/share/roseus/ros/find_object_2d/msg/ObjectsStamped.l

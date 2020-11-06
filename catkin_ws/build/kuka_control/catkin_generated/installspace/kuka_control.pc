@@ -1,0 +1,8 @@
+prefix=/home/pc-proyecto/Manipulacion/catkin_ws/install
+
+Name: kuka_control
+Description: Description of kuka_control
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -lkuka_control
+Requires: controller_manager hardware_interface nav_msgs roscpp rospy std_msgs tf

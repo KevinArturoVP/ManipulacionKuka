@@ -1,0 +1,3 @@
+Symlinking /home/pc-proyecto/Manipulacion/catkin_ws/devel/lib/pkgconfig/kuka_kr16_support.pc
+Symlinking /home/pc-proyecto/Manipulacion/catkin_ws/devel/share/kuka_kr16_support/cmake/kuka_kr16_supportConfig.cmake
+Symlinking /home/pc-proyecto/Manipulacion/catkin_ws/devel/share/kuka_kr16_support/cmake/kuka_kr16_supportConfig-version.cmake

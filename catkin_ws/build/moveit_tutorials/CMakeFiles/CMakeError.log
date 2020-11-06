@@ -1,0 +1,55 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/pc-proyecto/Manipulacion/catkin_ws/build/moveit_tutorials/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_51c68/fast"
+/usr/bin/make -f CMakeFiles/cmTC_51c68.dir/build.make CMakeFiles/cmTC_51c68.dir/build
+make[1]: se entra en el directorio '/home/pc-proyecto/Manipulacion/catkin_ws/build/moveit_tutorials/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_51c68.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_51c68.dir/CheckSymbolExists.c.o   -c /home/pc-proyecto/Manipulacion/catkin_ws/build/moveit_tutorials/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_51c68
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_51c68.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_51c68.dir/CheckSymbolExists.c.o  -o cmTC_51c68 
+CMakeFiles/cmTC_51c68.dir/CheckSymbolExists.c.o: En la función `main':
+CheckSymbolExists.c:(.text+0x1b): referencia a `pthread_create' sin definir
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_51c68.dir/build.make:97: fallo en las instrucciones para el objetivo 'cmTC_51c68'
+make[1]: *** [cmTC_51c68] Error 1
+make[1]: se sale del directorio '/home/pc-proyecto/Manipulacion/catkin_ws/build/moveit_tutorials/CMakeFiles/CMakeTmp'
+Makefile:126: fallo en las instrucciones para el objetivo 'cmTC_51c68/fast'
+make: *** [cmTC_51c68/fast] Error 2
+
+File /home/pc-proyecto/Manipulacion/catkin_ws/build/moveit_tutorials/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/pc-proyecto/Manipulacion/catkin_ws/build/moveit_tutorials/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_1bdcb/fast"
+/usr/bin/make -f CMakeFiles/cmTC_1bdcb.dir/build.make CMakeFiles/cmTC_1bdcb.dir/build
+make[1]: se entra en el directorio '/home/pc-proyecto/Manipulacion/catkin_ws/build/moveit_tutorials/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1bdcb.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_1bdcb.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_1bdcb
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1bdcb.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_1bdcb.dir/CheckFunctionExists.c.o  -o cmTC_1bdcb -lpthreads 
+/usr/bin/ld: no se puede encontrar -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_1bdcb.dir/build.make:97: fallo en las instrucciones para el objetivo 'cmTC_1bdcb'
+make[1]: *** [cmTC_1bdcb] Error 1
+make[1]: se sale del directorio '/home/pc-proyecto/Manipulacion/catkin_ws/build/moveit_tutorials/CMakeFiles/CMakeTmp'
+Makefile:126: fallo en las instrucciones para el objetivo 'cmTC_1bdcb/fast'
+make: *** [cmTC_1bdcb/fast] Error 2
+
+

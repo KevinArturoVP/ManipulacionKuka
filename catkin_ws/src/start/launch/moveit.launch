@@ -1,0 +1,95 @@
+<launch>
+
+	<include file="$(find kinect2_bridge)/launch/kinect2_bridge.launch" />
+
+	<!--group ns="kinect"-->
+	<arg name="model" default="$(find knowledge)/harware/kinect.xml"/>
+	<param name="robot_description" command="cat $(find knowledge)/hardware/kinect.xml" />
+	<node name="my_stp" pkg="tf" type="static_transform_publisher" args="0 2 0 4.71239 0 0 base_link base_link_kinect 100"/>
+	<node name="robot_state_publisher_kinect" pkg="robot_state_publisher" type="state_publisher"/>
+	<node name="joint_state_publisher_kinect" pkg="joint_state_publisher" type="joint_state_publisher" />
+	<!--/group-->
+
+	<group ns="kuka">
+
+		<!--arg name="model" default="$(find assembly_kuka_simp)/urdf/kuka_modelo.urdf"/>
+		<param name="robot_description" command="cat $(find assembly_kuka_simp)/urdf/kuka_modelo.urdf" />
+		<node name="robot_state_publisher_kuka" pkg="robot_state_publisher" type="state_publisher"/>
+		<node name="joint_state_publisher_kuka" pkg="joint_state_publisher" type="joint_state_publisher" /-->
+
+		<!-- specify the planning pipeline -->
+		<arg name="pipeline" default="ompl" />
+
+		<!-- By default, we do not start a database (it can be large) -->
+		<arg name="db" default="false" />
+
+		<!-- Allow user to specify database location -->
+		<arg name="db_path" default="$(find kuka_config)/default_warehouse_mongo_db" />
+
+		<!-- By default, we are not in debug mode -->
+		<arg name="debug" default="false" />
+
+		<!--
+		By default, hide joint_state_publisher's GUI
+
+		MoveIt!'s "demo" mode replaces the real robot driver with the joint_state_publisher.
+		The latter one maintains and publishes the current joint configuration of the simulated robot.
+		It also provides a GUI to move the simulated robot around "manually".
+		This corresponds to moving around the real robot without the use of MoveIt.
+		-->
+
+		<arg name="use_gui" default="false" />
+
+		<!-- Load the URDF, SRDF and other .yaml configuration files on the param server -->
+		<include file="$(find kuka_config)/launch/planning_context.launch">
+			<arg name="load_robot_description" value="true"/>
+		</include>
+
+		<!-- If needed, broadcast static tf for robot root -->
+
+
+		<!-- We do not have a robot connected, so publish fake joint states -->
+		<node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher">
+			<param name="use_gui" value="$(arg use_gui)"/>
+			<rosparam param="source_list">[move_group/fake_controller_joint_states]</rosparam>
+		</node>
+
+		<!-- Given the published joint states, publish tf for the robot links -->
+		<node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="true" output="screen" />
+
+		<!-- Run the main MoveIt! executable without trajectory execution (we do not have controllers configured by default) -->
+		<include file="$(find kuka_config)/launch/move_group.launch">
+			<arg name="allow_trajectory_execution" value="true"/>
+			<arg name="fake_execution" value="true"/>
+			<arg name="info" value="true"/>
+			<arg name="debug" value="$(arg debug)"/>
+			<arg name="pipeline" value="$(arg pipeline)"/>
+		</include>
+
+		<!-- Run Rviz and load the default config to see the state of the move_group node -->
+		<include file="$(find kuka_config)/launch/moveit_rviz.launch">
+			<arg name="rviz_config" value="$(find kuka_config)/launch/moveit.rviz"/>
+			<arg name="debug" value="$(arg debug)"/>
+		</include>
+
+		<!-- If database loading was enabled, start mongodb as well -->
+		<include file="$(find kuka_config)/launch/default_warehouse_db.launch" if="$(arg db)">
+			<arg name="moveit_warehouse_database_path" value="$(arg db_path)"/>
+		</include>
+
+	</group>
+
+	<group ns="hardware">
+		<node name="kinect_man" pkg="kinect_mannager_2" type="kinect_mannager_2_node" output="screen"/>
+		<node name="head_simul" pkg="head" type="head_simul_node.py" output="screen"/>
+	</group>
+
+	<!--group ns="hri">
+		<node name="rviz" pkg="rviz" type="rviz" respawn="false" output="screen" args="-d $(arg rvizconfig)" required="true" />
+	</group-->
+
+	<group ns="vision">
+		<node name="obj_angle_calc" pkg="obj_angle_calc" type="obj_angle_calc_node" output="screen"/>
+	</group>
+
+</launch>

@@ -1,0 +1,4 @@
+Symlinking /home/pc-proyecto/Manipulacion/catkin_ws/devel/lib/joint_trajectory_action/joint_trajectory_action
+Symlinking /home/pc-proyecto/Manipulacion/catkin_ws/devel/lib/pkgconfig/joint_trajectory_action.pc
+Symlinking /home/pc-proyecto/Manipulacion/catkin_ws/devel/share/joint_trajectory_action/cmake/joint_trajectory_actionConfig.cmake
+Symlinking /home/pc-proyecto/Manipulacion/catkin_ws/devel/share/joint_trajectory_action/cmake/joint_trajectory_actionConfig-version.cmake

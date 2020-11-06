@@ -1,0 +1,1 @@
+/home/pc-proyecto/Manipulacion/catkin_ws/devel/.private/kinect_mannager/share/kinect_mannager/cmake/kinect_mannagerConfig.cmake

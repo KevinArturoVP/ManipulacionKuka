@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: kr52_description
+    relative_path: urdf/kr52_description.urdf
+    xacro_args: ""
+  SRDF:
+    relative_path: config/kr52_description.srdf
+  CONFIG:
+    author_name: Diego
+    author_email: example@ayylmao.com
+    generated_timestamp: 1583871905

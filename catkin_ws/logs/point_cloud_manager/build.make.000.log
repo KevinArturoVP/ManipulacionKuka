@@ -1,0 +1,226 @@
+[35m[1mScanning dependencies of target std_msgs_generate_messages_nodejs[0m
+[35m[1mScanning dependencies of target std_srvs_generate_messages_py[0m
+[  0%] Built target std_msgs_generate_messages_nodejs
+[  0%] Built target std_srvs_generate_messages_py
+[35m[1mScanning dependencies of target _point_cloud_manager_generate_messages_check_deps_GetRgbd[0m
+[35m[1mScanning dependencies of target sensor_msgs_generate_messages_nodejs[0m
+[  0%] Built target sensor_msgs_generate_messages_nodejs
+[35m[1mScanning dependencies of target vision_msgs_generate_messages_nodejs[0m
+[  0%] Built target _point_cloud_manager_generate_messages_check_deps_GetRgbd
+[  0%] Built target vision_msgs_generate_messages_nodejs
+[35m[1mScanning dependencies of target geometry_msgs_generate_messages_nodejs[0m
+[35m[1mScanning dependencies of target vision_msgs_generate_messages_lisp[0m
+[  0%] Built target geometry_msgs_generate_messages_nodejs
+[  0%] Built target vision_msgs_generate_messages_lisp
+[35m[1mScanning dependencies of target sensor_msgs_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target geometry_msgs_generate_messages_lisp[0m
+[  0%] Built target sensor_msgs_generate_messages_lisp
+[  0%] Built target geometry_msgs_generate_messages_lisp
+[35m[1mScanning dependencies of target std_msgs_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target sensor_msgs_generate_messages_eus[0m
+[  0%] Built target std_msgs_generate_messages_lisp
+[  0%] Built target sensor_msgs_generate_messages_eus
+[35m[1mScanning dependencies of target vision_msgs_generate_messages_eus[0m
+[35m[1mScanning dependencies of target geometry_msgs_generate_messages_eus[0m
+[  0%] Built target vision_msgs_generate_messages_eus
+[  0%] Built target geometry_msgs_generate_messages_eus
+[35m[1mScanning dependencies of target std_msgs_generate_messages_eus[0m
+[35m[1mScanning dependencies of target geometry_msgs_generate_messages_cpp[0m
+[  0%] Built target std_msgs_generate_messages_eus
+[  0%] Built target geometry_msgs_generate_messages_cpp
+[35m[1mScanning dependencies of target std_msgs_generate_messages_cpp[0m
+[35m[1mScanning dependencies of target vision_msgs_generate_messages_cpp[0m
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target vision_msgs_generate_messages_cpp
+[35m[1mScanning dependencies of target sensor_msgs_generate_messages_cpp[0m
+[35m[1mScanning dependencies of target vision_msgs_generate_messages_py[0m
+[  0%] Built target sensor_msgs_generate_messages_cpp
+[  0%] Built target vision_msgs_generate_messages_py
+[35m[1mScanning dependencies of target topic_tools_generate_messages_nodejs[0m
+[35m[1mScanning dependencies of target topic_tools_generate_messages_lisp[0m
+[  0%] Built target topic_tools_generate_messages_nodejs
+[  0%] Built target topic_tools_generate_messages_lisp
+[35m[1mScanning dependencies of target topic_tools_generate_messages_eus[0m
+[35m[1mScanning dependencies of target topic_tools_generate_messages_cpp[0m
+[  0%] Built target topic_tools_generate_messages_eus
+[  0%] Built target topic_tools_generate_messages_cpp
+[35m[1mScanning dependencies of target actionlib_generate_messages_cpp[0m
+[35m[1mScanning dependencies of target roscpp_generate_messages_cpp[0m
+[  0%] Built target actionlib_generate_messages_cpp
+[  0%] Built target roscpp_generate_messages_cpp
+[35m[1mScanning dependencies of target rosgraph_msgs_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target bond_generate_messages_cpp[0m
+[  0%] Built target rosgraph_msgs_generate_messages_lisp
+[  0%] Built target bond_generate_messages_cpp
+[35m[1mScanning dependencies of target rosgraph_msgs_generate_messages_eus[0m
+[35m[1mScanning dependencies of target rosgraph_msgs_generate_messages_cpp[0m
+[  0%] Built target rosgraph_msgs_generate_messages_eus
+[  0%] Built target rosgraph_msgs_generate_messages_cpp
+[35m[1mScanning dependencies of target tf_generate_messages_nodejs[0m
+[35m[1mScanning dependencies of target dynamic_reconfigure_generate_messages_cpp[0m
+[  0%] Built target tf_generate_messages_nodejs
+[  0%] Built target dynamic_reconfigure_generate_messages_cpp
+[35m[1mScanning dependencies of target tf_generate_messages_py[0m
+[35m[1mScanning dependencies of target tf_generate_messages_lisp[0m
+[  0%] Built target tf_generate_messages_py
+[  0%] Built target tf_generate_messages_lisp
+[35m[1mScanning dependencies of target std_srvs_generate_messages_eus[0m
+[35m[1mScanning dependencies of target roscpp_generate_messages_lisp[0m
+[  0%] Built target roscpp_generate_messages_lisp
+[  0%] Built target std_srvs_generate_messages_eus
+[35m[1mScanning dependencies of target bond_generate_messages_eus[0m
+[35m[1mScanning dependencies of target sensor_msgs_generate_messages_py[0m
+[  0%] Built target bond_generate_messages_eus
+[  0%] Built target sensor_msgs_generate_messages_py
+[35m[1mScanning dependencies of target nodelet_generate_messages_py[0m
+[35m[1mScanning dependencies of target roscpp_generate_messages_py[0m
+[  0%] Built target nodelet_generate_messages_py
+[  0%] Built target roscpp_generate_messages_py
+[35m[1mScanning dependencies of target rosgraph_msgs_generate_messages_nodejs[0m
+[35m[1mScanning dependencies of target geometry_msgs_generate_messages_py[0m
+[  0%] Built target rosgraph_msgs_generate_messages_nodejs
+[  0%] Built target geometry_msgs_generate_messages_py
+[35m[1mScanning dependencies of target roscpp_generate_messages_nodejs[0m
+[35m[1mScanning dependencies of target bond_generate_messages_lisp[0m
+[  0%] Built target roscpp_generate_messages_nodejs
+[  0%] Built target bond_generate_messages_lisp
+[35m[1mScanning dependencies of target std_msgs_generate_messages_py[0m
+[35m[1mScanning dependencies of target actionlib_generate_messages_lisp[0m
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target actionlib_generate_messages_lisp
+[35m[1mScanning dependencies of target nodelet_generate_messages_cpp[0m
+[35m[1mScanning dependencies of target bond_generate_messages_py[0m
+[  0%] Built target nodelet_generate_messages_cpp
+[  0%] Built target bond_generate_messages_py
+[35m[1mScanning dependencies of target std_srvs_generate_messages_nodejs[0m
+[35m[1mScanning dependencies of target pcl_ros_gencfg[0m
+[  0%] Built target std_srvs_generate_messages_nodejs
+[  0%] Built target pcl_ros_gencfg
+[35m[1mScanning dependencies of target tf_generate_messages_eus[0m
+[35m[1mScanning dependencies of target actionlib_msgs_generate_messages_cpp[0m
+[  0%] Built target tf_generate_messages_eus
+[  0%] Built target actionlib_msgs_generate_messages_cpp
+[35m[1mScanning dependencies of target std_srvs_generate_messages_cpp[0m
+[35m[1mScanning dependencies of target roscpp_generate_messages_eus[0m
+[  0%] Built target std_srvs_generate_messages_cpp
+[  0%] Built target roscpp_generate_messages_eus
+[35m[1mScanning dependencies of target rosgraph_msgs_generate_messages_py[0m
+[35m[1mScanning dependencies of target actionlib_msgs_generate_messages_eus[0m
+[  0%] Built target rosgraph_msgs_generate_messages_py
+[  0%] Built target actionlib_msgs_generate_messages_eus
+[35m[1mScanning dependencies of target nodelet_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target actionlib_msgs_generate_messages_lisp[0m
+[  0%] Built target nodelet_generate_messages_lisp
+[  0%] Built target actionlib_msgs_generate_messages_lisp
+[35m[1mScanning dependencies of target actionlib_msgs_generate_messages_py[0m
+[35m[1mScanning dependencies of target tf2_msgs_generate_messages_cpp[0m
+[  0%] Built target actionlib_msgs_generate_messages_py
+[  0%] Built target tf2_msgs_generate_messages_cpp
+[35m[1mScanning dependencies of target tf2_msgs_generate_messages_eus[0m
+[35m[1mScanning dependencies of target actionlib_generate_messages_py[0m
+[  0%] Built target tf2_msgs_generate_messages_eus
+[  0%] Built target actionlib_generate_messages_py
+[35m[1mScanning dependencies of target tf2_msgs_generate_messages_py[0m
+[  0%] Built target tf2_msgs_generate_messages_py
+[35m[1mScanning dependencies of target tf2_msgs_generate_messages_nodejs[0m
+[35m[1mScanning dependencies of target dynamic_reconfigure_generate_messages_eus[0m
+[  0%] Built target tf2_msgs_generate_messages_nodejs
+[  0%] Built target dynamic_reconfigure_generate_messages_eus
+[35m[1mScanning dependencies of target dynamic_reconfigure_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target pcl_msgs_generate_messages_cpp[0m
+[  0%] Built target dynamic_reconfigure_generate_messages_lisp
+[35m[1mScanning dependencies of target dynamic_reconfigure_generate_messages_nodejs[0m
+[  0%] Built target pcl_msgs_generate_messages_cpp
+[  0%] Built target dynamic_reconfigure_generate_messages_nodejs
+[35m[1mScanning dependencies of target dynamic_reconfigure_generate_messages_py[0m
+[  0%] Built target dynamic_reconfigure_generate_messages_py
+[35m[1mScanning dependencies of target tf2_msgs_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target dynamic_reconfigure_gencfg[0m
+[  0%] Built target tf2_msgs_generate_messages_lisp
+[  0%] Built target dynamic_reconfigure_gencfg
+[35m[1mScanning dependencies of target nodelet_generate_messages_eus[0m
+[35m[1mScanning dependencies of target nodelet_generate_messages_nodejs[0m
+[  0%] Built target nodelet_generate_messages_eus
+[  0%] Built target nodelet_generate_messages_nodejs
+[35m[1mScanning dependencies of target pcl_msgs_generate_messages_nodejs[0m
+[  0%] Built target pcl_msgs_generate_messages_nodejs
+[35m[1mScanning dependencies of target bond_generate_messages_nodejs[0m
+[35m[1mScanning dependencies of target topic_tools_generate_messages_py[0m
+[  0%] Built target bond_generate_messages_nodejs
+[  0%] Built target topic_tools_generate_messages_py
+[35m[1mScanning dependencies of target actionlib_msgs_generate_messages_nodejs[0m
+[35m[1mScanning dependencies of target nodelet_topic_tools_gencfg[0m
+[  0%] Built target actionlib_msgs_generate_messages_nodejs
+[  0%] Built target nodelet_topic_tools_gencfg
+[35m[1mScanning dependencies of target std_srvs_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target pcl_msgs_generate_messages_eus[0m
+[  0%] Built target std_srvs_generate_messages_lisp
+[  0%] Built target pcl_msgs_generate_messages_eus
+[35m[1mScanning dependencies of target tf_generate_messages_cpp[0m
+[35m[1mScanning dependencies of target actionlib_generate_messages_nodejs[0m
+[  0%] Built target tf_generate_messages_cpp
+[  0%] Built target actionlib_generate_messages_nodejs
+[35m[1mScanning dependencies of target pcl_msgs_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target actionlib_generate_messages_eus[0m
+[  0%] Built target pcl_msgs_generate_messages_lisp
+[  0%] Built target actionlib_generate_messages_eus
+[35m[1mScanning dependencies of target pcl_msgs_generate_messages_py[0m
+[35m[1mScanning dependencies of target point_cloud_manager_generate_messages_nodejs[0m
+[  0%] Built target pcl_msgs_generate_messages_py
+[ 10%] [34m[1mGenerating Javascript code from point_cloud_manager/GetRgbd.srv[0m
+[35m[1mScanning dependencies of target point_cloud_manager_generate_messages_lisp[0m
+[ 20%] [34m[1mGenerating Lisp code from point_cloud_manager/GetRgbd.srv[0m
+[ 20%] Built target point_cloud_manager_generate_messages_nodejs
+[35m[1mScanning dependencies of target point_cloud_manager_generate_messages_eus[0m
+[ 30%] [34m[1mGenerating EusLisp code from point_cloud_manager/GetRgbd.srv[0m
+[ 30%] Built target point_cloud_manager_generate_messages_lisp
+[ 40%] [34m[1mGenerating EusLisp manifest code for point_cloud_manager[0m
+[35m[1mScanning dependencies of target point_cloud_manager_generate_messages_cpp[0m
+[ 50%] [34m[1mGenerating C++ code from point_cloud_manager/GetRgbd.srv[0m
+[ 50%] Built target point_cloud_manager_generate_messages_cpp
+[35m[1mScanning dependencies of target point_cloud_manager_generate_messages_py[0m
+[ 60%] [34m[1mGenerating Python code from SRV point_cloud_manager/GetRgbd[0m
+[ 70%] [34m[1mGenerating Python srv __init__.py for point_cloud_manager[0m
+[ 70%] Built target point_cloud_manager_generate_messages_py
+[ 70%] Built target point_cloud_manager_generate_messages_eus
+[35m[1mScanning dependencies of target point_cloud_man_node[0m
+[ 80%] [32mBuilding CXX object CMakeFiles/point_cloud_man_node.dir/src/point_cloud_man_node.cpp.o[0m
+In file included from [01m[K/home/pc-proyecto/Manipulacion/catkin_ws/src/tools/point_cloud_manager/src/PcManNode.h:9:0[m[K,
+                 from [01m[K/home/pc-proyecto/Manipulacion/catkin_ws/src/tools/point_cloud_manager/src/point_cloud_man_node.cpp:3[m[K:
+[01m[K/usr/include/pcl-1.8/pcl/visualization/cloud_viewer.h:202:14:[m[K [01;35m[Kwarning: [m[K‘[01m[Ktemplate<class> class std::auto_ptr[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+         std::[01;35m[Kauto_ptr[m[K<CloudViewer_impl> impl_;
+              [01;35m[K^~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/7/bits/locale_conv.h:41:0[m[K,
+                 from [01m[K/usr/include/c++/7/locale:43[m[K,
+                 from [01m[K/usr/include/boost/filesystem/path_traits.hpp:29[m[K,
+                 from [01m[K/usr/include/boost/filesystem/path.hpp:25[m[K,
+                 from [01m[K/home/pc-proyecto/Manipulacion/catkin_ws/src/tools/point_cloud_manager/src/point_cloud_man_node.cpp:2[m[K:
+[01m[K/usr/include/c++/7/bits/unique_ptr.h:51:28:[m[K [01;36m[Knote: [m[Kdeclared here
+   template<typename> class [01;36m[Kauto_ptr[m[K;
+                            [01;36m[K^~~~~~~~[m[K
+[ 90%] [32mBuilding CXX object CMakeFiles/point_cloud_man_node.dir/src/PcManNode.cpp.o[0m
+In file included from [01m[K/home/pc-proyecto/Manipulacion/catkin_ws/src/tools/point_cloud_manager/src/PcManNode.h:9:0[m[K,
+                 from [01m[K/home/pc-proyecto/Manipulacion/catkin_ws/src/tools/point_cloud_manager/src/PcManNode.cpp:1[m[K:
+[01m[K/usr/include/pcl-1.8/pcl/visualization/cloud_viewer.h:202:14:[m[K [01;35m[Kwarning: [m[K‘[01m[Ktemplate<class> class std::auto_ptr[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+         std::[01;35m[Kauto_ptr[m[K<CloudViewer_impl> impl_;
+              [01;35m[K^~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/7/memory:80:0[m[K,
+                 from [01m[K/usr/include/boost/config/no_tr1/memory.hpp:21[m[K,
+                 from [01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:23[m[K,
+                 from [01m[K/usr/include/boost/shared_ptr.hpp:17[m[K,
+                 from [01m[K/usr/include/boost/date_time/time_clock.hpp:17[m[K,
+                 from [01m[K/usr/include/boost/thread/thread_time.hpp:9[m[K,
+                 from [01m[K/usr/include/boost/thread/lock_types.hpp:18[m[K,
+                 from [01m[K/usr/include/boost/thread/pthread/mutex.hpp:16[m[K,
+                 from [01m[K/usr/include/boost/thread/mutex.hpp:16[m[K,
+                 from [01m[K/usr/include/pcl-1.8/pcl/io/boost.h:49[m[K,
+                 from [01m[K/usr/include/pcl-1.8/pcl/io/openni_grabber.h:46[m[K,
+                 from [01m[K/home/pc-proyecto/Manipulacion/catkin_ws/src/tools/point_cloud_manager/src/PcManNode.h:4[m[K,
+                 from [01m[K/home/pc-proyecto/Manipulacion/catkin_ws/src/tools/point_cloud_manager/src/PcManNode.cpp:1[m[K:
+[01m[K/usr/include/c++/7/bits/unique_ptr.h:51:28:[m[K [01;36m[Knote: [m[Kdeclared here
+   template<typename> class [01;36m[Kauto_ptr[m[K;
+                            [01;36m[K^~~~~~~~[m[K
+[100%] [32m[1mLinking CXX executable /home/pc-proyecto/Manipulacion/catkin_ws/devel/.private/point_cloud_manager/lib/point_cloud_manager/point_cloud_man_node[0m
+[100%] Built target point_cloud_man_node
+[35m[1mScanning dependencies of target point_cloud_manager_generate_messages[0m
+[100%] Built target point_cloud_manager_generate_messages

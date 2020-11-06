@@ -1,0 +1,3 @@
+Symlinking /home/pc-proyecto/Manipulacion/catkin_ws/devel/lib/pkgconfig/kuka_lbr_iiwa_support.pc
+Symlinking /home/pc-proyecto/Manipulacion/catkin_ws/devel/share/kuka_lbr_iiwa_support/cmake/kuka_lbr_iiwa_supportConfig-version.cmake
+Symlinking /home/pc-proyecto/Manipulacion/catkin_ws/devel/share/kuka_lbr_iiwa_support/cmake/kuka_lbr_iiwa_supportConfig.cmake

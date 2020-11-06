@@ -1,0 +1,8 @@
+[35m[1mScanning dependencies of target kuka_hardware_interface[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/kuka_hardware_interface.dir/src/kuka_hardware_interface.cpp.o[0m
+[ 50%] [32m[1mLinking CXX shared library /home/pc-proyecto/Manipulacion/catkin_ws/devel/.private/kuka_rsi_hw_interface/lib/libkuka_hardware_interface.so[0m
+[ 50%] Built target kuka_hardware_interface
+[35m[1mScanning dependencies of target kuka_hardware_interface_node[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/kuka_hardware_interface_node.dir/src/kuka_hardware_interface_node.cpp.o[0m
+[100%] [32m[1mLinking CXX executable /home/pc-proyecto/Manipulacion/catkin_ws/devel/.private/kuka_rsi_hw_interface/lib/kuka_rsi_hw_interface/kuka_hardware_interface_node[0m
+[100%] Built target kuka_hardware_interface_node

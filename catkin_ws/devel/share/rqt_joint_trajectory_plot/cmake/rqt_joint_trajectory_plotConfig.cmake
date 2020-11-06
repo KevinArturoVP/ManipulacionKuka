@@ -1,0 +1,1 @@
+/home/pc-proyecto/Manipulacion/catkin_ws/devel/.private/rqt_joint_trajectory_plot/share/rqt_joint_trajectory_plot/cmake/rqt_joint_trajectory_plotConfig.cmake

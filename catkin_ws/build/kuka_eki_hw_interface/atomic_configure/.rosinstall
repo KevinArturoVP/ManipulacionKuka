@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/pc-proyecto/Manipulacion/catkin_ws/devel/.private/kuka_eki_hw_interface/setup.sh

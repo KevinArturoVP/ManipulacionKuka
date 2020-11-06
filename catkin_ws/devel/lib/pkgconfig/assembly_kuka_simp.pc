@@ -1,0 +1,1 @@
+/home/pc-proyecto/Manipulacion/catkin_ws/devel/.private/assembly_kuka_simp/lib/pkgconfig/assembly_kuka_simp.pc
